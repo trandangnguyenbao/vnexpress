@@ -1,0 +1,2010 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/boostrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/remixicons/fonts/remixicon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/responsive.css"> 
+    <link rel="stylesheet" href="/js/index.js">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <header>
+            <div class="header container">
+                <ul class="header__left">
+                    <li class="header__left">
+                        <img src="/img/logo.svg" alt="">
+                    </li>
+                    <li><div class="line"></div></li>
+                    <li class="header__left">
+                        <span>Thứ ba, 13/07/2022</span>
+                    </li>
+                </ul>
+                <ul class="header__right">
+                    <li class="header__right">
+                        <i class="ri-time-line"></i>
+                        <span>Mới nhất</span>
+                    </li>
+                    <li class="header__right">
+                        <img src="/img/icon.jfif" alt="" style="height:20px ; width: 20px;">
+                        <span>International</span>
+                    </li>
+                    <li class="header__right">
+                        <div class="line"></div>
+                    </li>
+                    <li class="header__right">
+                        <input type="text" placeholder="Tìm kiếm">
+                        <i class="ri-search-line"></i>
+                    </li>
+                    <li class="header__right">
+                        <i class="ri-user-fill"></i>
+                        <a href=""><span onclick="loginFucntion()">Đăng Nhập</span></a>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+            <div class="navbar container-fluid">
+                <ul class="navbar__item">
+                    <li class="navbar__item hidden hiddenscroll">
+                        <img src="/img/icon.jfif" alt="">
+                    </li>
+                    <li class="navbar__item hidden hidden__scroll">
+                       <a href="#" class="navbar__item active">Mới nhất</a>
+                    </li>
+                    <li class="navbar__item">
+                        <div class="seperate" style="border: 1px solid #f8f8f8;"></div>
+                    </li>
+                    <li class="navbar__item"><i class="ri-home-4-fill"></i></li>
+                    <li class="navbar__item news"><a href="#" class="navbar__item">Thời sự
+                        <ul class="navbar__item--child">
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Chính trị</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Dân sinh</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Lao động - Việc làm</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Giao thông</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Mekong</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Quỹ Hy vọng</li></a>
+                        </ul>
+                    </a></li>
+                    <li class="navbar__item"><a href="#" class="navbar__item">Góc nhìn
+                        <ul class="navbar__item--child">
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Bình luận nhiều</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Covid 19</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Chính trị & chính sách</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Y tế & sức khỏe</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Kinh doanh & quản trị<li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Kinh doanh & quản trị<li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Kinh doanh & quản trị<li></a>
+                        </ul>
+                    </a></li>
+                    <li class="navbar__item"><a href="#" class="navbar__item">Thế giới
+                        <ul class="navbar__item--child">
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Tư liệu</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Phân tích</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Người Việt 5 châu</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Cuộc sống đó đây</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Quân sự<li></a>
+                        </ul>
+                    </a></li>
+                    <li class="navbar__item"><a href="#" class="navbar__item">Video</a>
+                        <ul class="navbar__item--child">
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Thời sự</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Nhịp sống</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Food</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Tôi kể</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Chuyện núi rừng<li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Pháp luật</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Giải trí</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Thể thao</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Số hóa</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Xe<li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Sức khỏe<li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Du lịch<li></a> 
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Thế giới<li></a> 
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Khoa học<li></a> 
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Giáo dục<li></a> 
+                        </ul>
+                    </li>
+                    <li class="navbar__item"><a href="#" class="navbar__item">Podcasts
+                        <ul class="navbar__item--child">
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">VnExpress hôm nay</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Ly hôn</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Thầm thì</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Bản ổn không?</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Chuyện đi làm<li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Úp mở 18+</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Điểm tin </li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Họ nói gì?</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Tiền làm gì?</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Tôi trong gương<li></a>
+                        </ul>
+                    </a></li>
+                    <li class="navbar__item"><a href="#" class="navbar__item">Kinh doanh
+                        <ul class="navbar__item--child">
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Quốc tế</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Doanh nghiệp</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Chứng khoán</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Ebank</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Vĩ mô<li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Tiền của tôi</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Bảo hiểm</li></a>
+                        </ul>
+                    </a></li>
+                    <li class="navbar__item"><a href="#" class="navbar__item">Khoa học
+                        <ul class="navbar__item--child">
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Khoa học trong nước </li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Tin tức</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Phát minh</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Ứng dụng</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Thế giới tự nhiên<li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Thường thức</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Sáng kiến khoa học</li></a>
+                        </ul>
+                    </a></li>
+                    <li class="navbar__item"><a href="#" class="navbar__item">Giải trí
+                        <ul class="navbar__item--child">
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Khoa học trong nước </li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Tin tức</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Phát minh</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Ứng dụng</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Thế giới tự nhiên<li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Thường thức</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Sáng kiến khoa học</li></a>
+                        </ul>
+                    </a></li>
+                    <li class="navbar__item"><a href="#" class="navbar__item">Thể thao
+                        <ul class="navbar__item--child">
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Giới sao</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Video</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Phim</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Nhạc</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Thế giới tự nhiên<li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Làm đẹp</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Sân khấu - Mỹ thuật </li></a>
+                        </ul>
+                    </a></li>
+                    <li class="navbar__item"><a href="#" class="navbar__item">Pháp luật
+                        <ul class="navbar__item--child">
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Hồ sơ phá án</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Video</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Tư vấn</li></a>
+                        </ul>
+                    </a></li>
+                    <li class="navbar__item"><a href="#" class="navbar__item">Giáo dục
+                        <ul class="navbar__item--child">
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Tin tức</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Tuyển sinh</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Du học</li></a>
+                        </ul>
+                    </a></li>
+                    <li class="navbar__item"><a href="#" class="navbar__item">Sức khỏe
+                        <ul class="navbar__item--child">
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Giới sao</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Video</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Phim</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Nhạc</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Thế giới tự nhiên<li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Làm đẹp</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Sân khấu - Mỹ thuật </li></a>
+                        </ul>
+                    </a></li>
+                    <li class="navbar__item"><a href="#" class="navbar__item">Đời sống
+                        <ul class="navbar__item--child">
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Giới sao</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Video</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Phim</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Nhạc</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Thế giới tự nhiên<li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Làm đẹp</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Sân khấu - Mỹ thuật </li></a>
+                        </ul>
+                    </a></li>
+                    <li class="navbar__item"><a href="#" class="navbar__item">Du lịch
+                        <ul class="navbar__item--child">
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Giới sao</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Video</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Phim</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Nhạc</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Thế giới tự nhiên<li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Làm đẹp</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Sân khấu - Mỹ thuật </li></a>
+                        </ul>
+                    </a></li>
+                    <li class="navbar__item"><a href="#" class="navbar__item">Số hóa
+                        <ul class="navbar__item--child">
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Giới sao</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Video</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Phim</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Nhạc</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Thế giới tự nhiên<li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Làm đẹp</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Sân khấu - Mỹ thuật </li></a>
+                        </ul>
+                    </a></li>
+                    <li class="navbar__item"><a href="#" class="navbar__item">Xe
+                        <ul class="navbar__item--child">
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Giới sao</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Video</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Phim</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Nhạc</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Thế giới tự nhiên<li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Làm đẹp</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Sân khấu - Mỹ thuật </li></a>
+                        </ul>
+                    </a></li>
+                    <li class="navbar__item"><a href="#" class="navbar__item">Ý kiến
+                        <ul class="navbar__item--child">
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Tin tức</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Tuyển sinh</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Du học</li></a>
+                        </ul>
+                    </a></li>
+                    <li class="navbar__item"><a href="#" class="navbar__item">Tâm sự
+                        <ul class="navbar__item--child">
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Giới sao</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Video</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Phim</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Nhạc</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Thế giới tự nhiên<li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Làm đẹp</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Sân khấu - Mỹ thuật </li></a>
+                        </ul></a></li>
+                    <li class="navbar__item"><a href="#" class="navbar__item">Hài
+                        <ul class="navbar__item--child">
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Giới sao</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Video</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Phim</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Nhạc</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Thế giới tự nhiên<li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Làm đẹp</li></a>
+                            <a href="#" class="navbar__item--child"><li class="navbar__item--child">Sân khấu - Mỹ thuật </li></a>
+                        </ul></a></li>
+                    <li class="navbar__item menu__item" onclick="menuOpen()">
+                        <span>Tất cả</span>
+                        <i class="ri-align-justify"></i>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+        </header>
+        <header id="menu__all sticky__menu">
+            <div class="menu__all container d-none">
+                <div class="menu__item col-lg-12">
+                    <h4 class="menu__item--title">Tất cả chuyên mục</h4>
+                    <span class="menu__item--title" style="left: 0;">
+                        <i class="ri-close-circle-fill" onclick="closeMenu()"></i>
+                    </span>
+                </div>
+                <hr>
+                <div class="row menu__all">
+                    <ul class="menu__all--item col-lg-2"><h6>Thời sự</h6>
+                        <a href=""><li class="menu__all--item">Chính trị</li></a>
+                        <a href=""><li class="menu__all--item">Dân sinh</li></a>
+                        <a href=""><li class="menu__all--item">Lao động - việc làm</li></a>
+                        <a href=""><li class="menu__all--item">Giao thông</li></a>
+                        <hr style="border:none; width: 80px; color: #333; background-color: #333;">
+                        <a href="" class="menu__all--item">Xem thêm</a>
+                    </ul>
+                    <ul class="menu__all--item col-lg-2"><h6>Góc nhìn</h6>
+                        <a href=""><li class="menu__all--item">Chính trị</li></a>
+                        <a href=""><li class="menu__all--item">Dân sinh</li></a>
+                        <a href=""><li class="menu__all--item">Lao động - việc làm</li></a>
+                        <a href=""><li class="menu__all--item">Giao thông</li></a>
+                        <hr style="border:none; width: 80px; color: #333; background-color: #333;">
+                        <a href="" class="menu__all--item">Xem thêm</a>
+                    </ul>
+                    <ul class="menu__all--item col-lg-2"><h6>Thế giới</h6>
+                        <a href=""><li class="menu__all--item">Chính trị</li></a>
+                        <a href=""><li class="menu__all--item">Dân sinh</li></a>
+                        <a href=""><li class="menu__all--item">Lao động - việc làm</li></a>
+                        <a href=""><li class="menu__all--item">Giao thông</li></a>
+                        <hr style="border:none; width: 80px; color: #333; background-color: #333;">
+                        <a href="" class="menu__all--item">Xem thêm</a>
+                    </ul>
+                    <ul class="menu__all--item col-lg-2"><h6>Video</h6>
+                        <a href=""><li class="menu__all--item">Chính trị</li></a>
+                        <a href=""><li class="menu__all--item">Dân sinh</li></a>
+                        <a href=""><li class="menu__all--item">Lao động - việc làm</li></a>
+                        <a href=""><li class="menu__all--item">Giao thông</li></a>
+                        <hr style="border:none; width: 80px; color: #333; background-color: #333;">
+                        <a href="" class="menu__all--item">Xem thêm</a>
+                    </ul>
+                    <ul class="menu__all--item col-lg-2"><h6>Podcasts</h6>
+                        <a href=""><li class="menu__all--item">Chính trị</li></a>
+                        <a href=""><li class="menu__all--item">Dân sinh</li></a>
+                        <a href=""><li class="menu__all--item">Lao động - việc làm</li></a>
+                        <a href=""><li class="menu__all--item">Giao thông</li></a>
+                        <hr style="border:none; width: 80px; color: #333; background-color: #333;">
+                        <a href="" class="menu__all--item">Xem thêm</a>
+                    </ul>
+                    <ul class="menu__all--item col-lg-2"><h6>Kinh doanh</h6>
+                        <a href=""><li class="menu__all--item">Chính trị</li></a>
+                        <a href=""><li class="menu__all--item">Dân sinh</li></a>
+                        <a href=""><li class="menu__all--item">Lao động - việc làm</li></a>
+                        <a href=""><li class="menu__all--item">Giao thông</li></a>
+                        <hr style="border:none; width: 80px; color: #333; background-color: #333;">
+                        <a href="" class="menu__all--item">Xem thêm</a>
+                    </ul>
+                    <ul class="menu__all--item col-lg-2"><h6>Khoa học</h6>
+                        <a href=""><li class="menu__all--item">Chính trị</li></a>
+                        <a href=""><li class="menu__all--item">Dân sinh</li></a>
+                        <a href=""><li class="menu__all--item">Lao động - việc làm</li></a>
+                        <a href=""><li class="menu__all--item">Giao thông</li></a>
+                        <hr style="border:none; width: 80px; color: #333; background-color: #333;">
+                        <a href="" class="menu__all--item">Xem thêm</a>
+                    </ul>
+                    <ul class="menu__all--item col-lg-2"><h6>Giải trí</h6>
+                        <a href=""><li class="menu__all--item">Chính trị</li></a>
+                        <a href=""><li class="menu__all--item">Dân sinh</li></a>
+                        <a href=""><li class="menu__all--item">Lao động - việc làm</li></a>
+                        <a href=""><li class="menu__all--item">Giao thông</li></a>
+                        <hr style="border:none; width: 80px; color: #333; background-color: #333;">
+                        <a href="" class="menu__all--item">Xem thêm</a>
+                    </ul>
+                    <ul class="menu__all--item col-lg-2"><h6>Thể thao</h6>
+                        <a href=""><li class="menu__all--item">Chính trị</li></a>
+                        <a href=""><li class="menu__all--item">Dân sinh</li></a>
+                        <a href=""><li class="menu__all--item">Lao động - việc làm</li></a>
+                        <a href=""><li class="menu__all--item">Giao thông</li></a>
+                        <hr style="border:none; width: 80px; color: #333; background-color: #333;">
+                        <a href="" class="menu__all--item">Xem thêm</a>
+                    </ul>
+                    <ul class="menu__all--item col-lg-2"><h6>Pháp luật</h6>
+                        <a href=""><li class="menu__all--item">Chính trị</li></a>
+                        <a href=""><li class="menu__all--item">Dân sinh</li></a>
+                        <a href=""><li class="menu__all--item">Lao động - việc làm</li></a>
+                        <a href=""><li class="menu__all--item">Giao thông</li></a>
+                        <hr style="border:none; width: 80px; color: #333; background-color: #333;">
+                        <a href="" class="menu__all--item">Xem thêm</a>
+                    </ul>
+                    <ul class="menu__all--item col-lg-2"><h6>Giáo dục</h6>
+                        <a href=""><li class="menu__all--item">Chính trị</li></a>
+                        <a href=""><li class="menu__all--item">Dân sinh</li></a>
+                        <a href=""><li class="menu__all--item">Lao động - việc làm</li></a>
+                        <a href=""><li class="menu__all--item">Giao thông</li></a>
+                        <hr style="border:none; width: 80px; color: #333; background-color: #333;">
+                        <a href="" class="menu__all--item">Xem thêm</a>
+                    </ul>
+                    <ul class="menu__all--item col-lg-2"><h6>Sức khỏe</h6>
+                        <a href=""><li class="menu__all--item">Chính trị</li></a>
+                        <a href=""><li class="menu__all--item">Dân sinh</li></a>
+                        <a href=""><li class="menu__all--item">Lao động - việc làm</li></a>
+                        <a href=""><li class="menu__all--item">Giao thông</li></a>
+                        <hr style="border:none; width: 80px; color: #333; background-color: #333;">
+                        <a href="" class="menu__all--item">Xem thêm</a>
+                    </ul>
+                    <ul class="menu__all--item col-lg-2"><h6>Đời sống</h6>
+                        <a href=""><li class="menu__all--item">Chính trị</li></a>
+                        <a href=""><li class="menu__all--item">Dân sinh</li></a>
+                        <a href=""><li class="menu__all--item">Lao động - việc làm</li></a>
+                        <a href=""><li class="menu__all--item">Giao thông</li></a>
+                        <hr style="border:none; width: 80px; color: #333; background-color: #333;">
+                        <a href="" class="menu__all--item">Xem thêm</a>
+                    </ul>
+                    <ul class="menu__all--item col-lg-2"><h6>Du lịch</h6>
+                        <a href=""><li class="menu__all--item">Chính trị</li></a>
+                        <a href=""><li class="menu__all--item">Dân sinh</li></a>
+                        <a href=""><li class="menu__all--item">Lao động - việc làm</li></a>
+                        <a href=""><li class="menu__all--item">Giao thông</li></a>
+                        <hr style="border:none; width: 80px; color: #333; background-color: #333;">
+                        <a href="" class="menu__all--item">Xem thêm</a>
+                    </ul>
+                    <ul class="menu__all--item col-lg-2"><h6>Số hóa</h6>
+                        <a href=""><li class="menu__all--item">Chính trị</li></a>
+                        <a href=""><li class="menu__all--item">Dân sinh</li></a>
+                        <a href=""><li class="menu__all--item">Lao động - việc làm</li></a>
+                        <a href=""><li class="menu__all--item">Giao thông</li></a>
+                        <hr style="border:none; width: 80px; color: #333; background-color: #333;">
+                        <a href="" class="menu__all--item">Xem thêm</a>
+                    </ul>
+                    <ul class="menu__all--item col-lg-2"><h6>Xe</h6>
+                        <a href=""><li class="menu__all--item">Chính trị</li></a>
+                        <a href=""><li class="menu__all--item">Dân sinh</li></a>
+                        <a href=""><li class="menu__all--item">Lao động - việc làm</li></a>
+                        <a href=""><li class="menu__all--item">Giao thông</li></a>
+                        <hr style="border:none; width: 80px; color: #333; background-color: #333;">
+                        <a href="" class="menu__all--item">Xem thêm</a>
+                    </ul>
+                    <ul class="menu__all--item col-lg-2"><h6>Ý kiến</h6>
+                        <a href=""><li class="menu__all--item">Chính trị</li></a>
+                        <a href=""><li class="menu__all--item">Dân sinh</li></a>
+                        <a href=""><li class="menu__all--item">Lao động - việc làm</li></a>
+                        <a href=""><li class="menu__all--item">Giao thông</li></a>
+                        <hr style="border:none; width: 80px; color: #333; background-color: #333;">
+                        <a href="" class="menu__all--item">Xem thêm</a>
+                    </ul>
+                    <ul class="menu__all--item col-lg-2"><h6>Tâm sự</h6>
+                        <a href=""><li class="menu__all--item">Chính trị</li></a>
+                        <a href=""><li class="menu__all--item">Dân sinh</li></a>
+                        <a href=""><li class="menu__all--item">Lao động - việc làm</li></a>
+                        <a href=""><li class="menu__all--item">Giao thông</li></a>
+                        <hr style="border:none; width: 80px; color: #333; background-color: #333;">
+                        <a href="" class="menu__all--item">Xem thêm</a>
+                    </ul>
+                    <ul class="menu__all--item col-lg-2"><h6>Hài</h6>
+                        <a href=""><li class="menu__all--item">Chính trị</li></a>
+                        <a href=""><li class="menu__all--item">Dân sinh</li></a>
+                        <a href=""><li class="menu__all--item">Lao động - việc làm</li></a>
+                        <a href=""><li class="menu__all--item">Giao thông</li></a>
+                        <hr style="border:none; width: 80px; color: #333; background-color: #333;">
+                        <a href="" class="menu__all--item">Xem thêm</a>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <!-- CONTAINER -->
+        <header id="container" class="">
+            <div class="container">
+                <div class="container__item row p-0">
+                    <div class="container__item col-lg-9 p-0">
+                        <ul class="container__item--child">
+                            <li class="container__item--child">
+                                <img src="/img/urn-publicid-ap-org-79e3dafb0d-1286-7456-1657623819.jpg" alt="">
+                            </li>
+                            <li class="container__item--child">
+                                <div>
+                                    <h5 class="container__item--child">Sri Lanka xác nhận Tổng thống đến Maldives</h5>
+                                    <p class="container__item--child">Không quân Sri Lanka cho biết Tổng thống Gotabaya Rajapaksa và vợ đã lên phi cơ của lực lượng này sáng nay để đến Maldives.</p>
+                                    <p class="container__item--child">"Theo quy định trong hiến pháp và một đề nghị từ chính phủ, Không quân Sri ...</p>
+                                    <a href="" class="container__item-child">Thế giới</a href="">
+                                </div>    
+                            </li>
+                        </ul>
+
+                        <ul class="container__item--child">
+                            <li class="container__item--child col-lg-4 p-0">
+                                <a href=""><h5>Điều gì sẽ xảy ra khi euro ngang giá USD</h5></a>
+                                <p>Euro yếu sẽ khiến hàng nhập khẩu vào châu Âu đắt đỏ hơn, kéo lạm phát lên cao, nhưng lại có lợi cho các hãng xuất khẩu khu vực này.</p>
+                            </li>
+                            <li class="container__item--child col-lg-4">
+                                <a href=""><h5>Thoát khí đốt Nga: Từ hy vọng thành 'ác mộng' của châu Âu</h5></a>
+                                <p>Tâm trạng hoang mang hiện tại của EU hoàn toàn khác xa sự lạc quan về khả năng thoát khí đốt Nga cách đây 3 tháng, theo Politico. <i class="ri-chat-4-fill"></i>13</p>
+                            </li>
+                            <li class="container__item--child line " style="border: 1px solid #bbb; height: 210px; color: #bbb; background-color: #bbb;" ></li>
+                            <li class="container__item--child col-lg-4">
+                                <a href="" class="container__item--title">Góc nhìn</a>
+                                <a href=""><h5>Phàn nàn về xe buýt</h5></a>
+                                <p>Nếu muốn Hà Nội ít ô nhiễm và đỡ tắc đường, bạn phải hy sinh một chút tiện nghi của mình.</p>
+                                <ul class="container__item--nodechild">
+                                    <li class="container__item--nodechild">
+                                        <span>Sébastien Eskenazi
+                                        </span>
+                                        <i class="ri-chat-4-fill">13</i>
+                                    </li>
+                                    <li class="container__item--nodechild">
+                                        <img src="/img/Eskenazipng-1600729850.png" alt="">
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="container__item col-lg-3 p-0">
+                        <img src="/img/bat-mi-nhung-bi-quyet-chup-anh-bat-dong-san-dep-b6.png" alt="">
+                    </div>
+                </div>
+                <hr>
+                <div class="container__left row p-0">
+                    <ul class="container__content col-lg-5">
+                        <a href="#"><li class="container__content">
+                            <h1 class="container__content--title">
+                                Giáo phái bị nghi phạm ám sát ông Abe căm hận
+                            </h1>
+                            <ul class="container__content--content">
+                                <li><img src="/img/npfile170144-1657684698-3894-1657685410.jpg" alt="" class="container__item--content"></li>
+                                <li><p class="container__content--content">Phương thức kiếm tiền của Giáo hội Thống nhất gây nhiều tranh cãi và là lý do khiến Yamagami, nghi phạm ám sát ông Abe, nuôi căm hận trong thời gian dài. </p></li>
+                            </ul>
+                            <hr>
+                        </li></a>
+                        <a href="#"><li class="container__content">
+                            <h1 class="container__content--title">
+                                Hai người bị sét đánh tử vong
+                            </h1>
+                            <ul class="container__content--content">
+                                <li><img src="/img/p5.jpg" alt="" class="container__item--content"></li>
+                                <li><p class="container__content--content">Đang cấy lúa trên cánh đồng xã Vân Côn, huyện Hoài Đức, hai phụ nữ bị sét đánh tử vong, sáng 13/7.</p></li>
+                            </ul>
+                            <hr>
+                        </li></a>
+                        <a href="#"><li class="container__content">
+                            <h1 class="container__content--title">
+                                Mỹ đề nghị cấm cửa tàu Nga, Ấn Độ từ chối
+                            </h1>
+                            <ul class="container__content--content">
+                                <li><img src="/img/p4.jpg" alt="" class="container__item--content"></li>
+                                <li><p class="container__content--content">Mỹ đề nghị Ấn Độ không cho tàu hàng Nga cập cảng vì các lệnh trừng phạt, song New Delhi bác bỏ, gọi đây là vấn đề chủ quyền. </p></li>
+                            </ul>
+                            <hr>
+                        </li></a>
+                        <a href="#"><li class="container__content">
+                            <h1 class="container__content--title">
+                                Thoát khí đốt Nga: Từ hy vọng thành 'ác mộng' của châu Âu
+                            </h1>
+                            <ul class="container__content--content">
+                                <li><img src="/img/urn-publicid-ap-org-79e3dafb0d-1286-7456-1657623819 (1).jpg" alt="" class="container__item--content"></li>
+                                <li><p class="container__content--content">Tâm trạng hoang mang hiện tại của EU hoàn toàn khác xa sự lạc quan về khả năng thoát khí đốt Nga cách đây 3 tháng, theo Politico.</p></li>
+                            </ul>
+                            <hr>
+                        </li></a>
+                        <a href="#"><li class="container__content">
+                            <h1 class="container__content--title">
+                                Thoát khí đốt Nga: Từ hy vọng thành 'ác mộng' của châu Âu
+                            </h1>
+                            <ul class="container__content--content">
+                                <li><img src="/img/urn-publicid-ap-org-79e3dafb0d-1286-7456-1657623819 (1).jpg" alt="" class="container__item--content"></li>
+                                <li><p class="container__content--content">Tâm trạng hoang mang hiện tại của EU hoàn toàn khác xa sự lạc quan về khả năng thoát khí đốt Nga cách đây 3 tháng, theo Politico.</p></li>
+                            </ul>
+                            <hr>
+                        </li></a>
+                        <a href="#"><li class="container__content">
+                            <h1 class="container__content--title">
+                                Thoát khí đốt Nga: Từ hy vọng thành 'ác mộng' của châu Âu
+                            </h1>
+                            <ul class="container__content--content">
+                                <li><img src="/img/urn-publicid-ap-org-79e3dafb0d-1286-7456-1657623819 (1).jpg" alt="" class="container__item--content"></li>
+                                <li><p class="container__content--content">Tâm trạng hoang mang hiện tại của EU hoàn toàn khác xa sự lạc quan về khả năng thoát khí đốt Nga cách đây 3 tháng, theo Politico.</p></li>
+                            </ul>
+                            <hr>
+                        </li></a>
+                        <a href="#"><li class="container__content">
+                            <img src="/img/Nga-Ukraine-Pc.jpg" style="height: 100px; width: 100%;" alt="">
+                            <hr>
+                        </li></a>
+                        <a href="#"><li class="container__content">
+                            <h1 class="container__content--title">
+                                10 xe bán chạy nhất nửa đầu 2022 - Vios vẫn là vua
+                            </h1>
+                            <ul class="container__content--content">
+                                <li><img src="/img/urn-publicid-ap-org-79e3dafb0d-1286-7456-1657623819.jpg" alt="" class="container__item--content"></li>
+                                <li><p class="container__content--content">Vios bán được gần 12.000 xe, trong khi Corolla Cross và Accent đều tiêu thụ trên 10.000 chiếc.</p></li>
+                            </ul>
+                            <hr>
+                        </li></a>
+                        <a href="#"><li class="container__content">
+                            <h1 class="container__content--title">
+                                Nga tuyên bố diệt gần 400 'lính đánh thuê nước ngoài' ở Ukraine
+                            </h1>
+                            <ul class="container__content--content">
+                                <li><img src="/img/h1.jpg" alt="" class="container__item--content"></li>
+                                <li><p class="container__content--content">Quân đội Nga thông báo tiêu diệt 391 "lính đánh thuê nước ngoài" ở Ukraine trong ba tuần qua, cáo buộc Kiev phóng đại quân số lực lượng này. </p></li>
+                            </ul>
+                            <hr>
+                        </li></a>
+                        <a href="#"><li class="container__content">
+                            <h1 class="container__content--title">
+                                Nga tuyên bố diệt gần 400 'lính đánh thuê nước ngoài' ở Ukraine
+                            </h1>
+                            <ul class="container__content--content">
+                                <li><img src="/img/h7.png" alt="" class="container__item--content"></li>
+                                <li><p class="container__content--content">Quân đội Nga thông báo tiêu diệt 391 "lính đánh thuê nước ngoài" ở Ukraine trong ba tuần qua, cáo buộc Kiev phóng đại quân số lực lượng này. </p></li>
+                            </ul>
+                            <hr>
+                        </li></a>
+                        <a href="#"><li class="container__content">
+                            <h1 class="container__content--title">
+                                Nga tuyên bố diệt gần 400 'lính đánh thuê nước ngoài' ở Ukraine
+                            </h1>
+                            <ul class="container__content--content">
+                                <li><img src="/img/h8.jpg" alt="" class="container__item--content"></li>
+                                <li><p class="container__content--content">Quân đội Nga thông báo tiêu diệt 391 "lính đánh thuê nước ngoài" ở Ukraine trong ba tuần qua, cáo buộc Kiev phóng đại quân số lực lượng này. </p></li>
+                            </ul>
+                            <hr>
+                        </li></a>
+                        <a href="#"><li class="container__content">
+                            <h1 class="container__content--title">
+                                Nga tuyên bố diệt gần 400 'lính đánh thuê nước ngoài' ở Ukraine
+                            </h1>
+                            <ul class="container__content--content">
+                                <li><img src="/img/h6.jpg" alt="" class="container__item--content"></li>
+                                <li><p class="container__content--content">Quân đội Nga thông báo tiêu diệt 391 "lính đánh thuê nước ngoài" ở Ukraine trong ba tuần qua, cáo buộc Kiev phóng đại quân số lực lượng này. </p></li>
+                            </ul>
+                            <hr>
+                        </li></a>
+                        <a href="#"><li class="container__content">
+                            <h1 class="container__content--title">
+                                Nga tuyên bố diệt gần 400 'lính đánh thuê nước ngoài' ở Ukraine
+                            </h1>
+                            <ul class="container__content--content">
+                                <li><img src="/img/h5.jpg" alt="" class="container__item--content"></li>
+                                <li><p class="container__content--content">Quân đội Nga thông báo tiêu diệt 391 "lính đánh thuê nước ngoài" ở Ukraine trong ba tuần qua, cáo buộc Kiev phóng đại quân số lực lượng này. </p></li>
+                            </ul>
+                            <hr>
+                        </li></a>
+                        <a href="#"><li class="container__content">
+                            <h1 class="container__content--title">
+                                Nga tuyên bố diệt gần 400 'lính đánh thuê nước ngoài' ở Ukraine
+                            </h1>
+                            <ul class="container__content--content">
+                                <li><img src="/img/h4.jpg" alt="" class="container__item--content"></li>
+                                <li><p class="container__content--content">Quân đội Nga thông báo tiêu diệt 391 "lính đánh thuê nước ngoài" ở Ukraine trong ba tuần qua, cáo buộc Kiev phóng đại quân số lực lượng này. </p></li>
+                            </ul>
+                            <hr>
+                        </li></a>
+                        <a href="#"><li class="container__content">
+                            <h1 class="container__content--title">
+                                Nga tuyên bố diệt gần 400 'lính đánh thuê nước ngoài' ở Ukraine
+                            </h1>
+                            <ul class="container__content--content">
+                                <li><img src="/img/h3.jpg" alt="" class="container__item--content"></li>
+                                <li><p class="container__content--content">Quân đội Nga thông báo tiêu diệt 391 "lính đánh thuê nước ngoài" ở Ukraine trong ba tuần qua, cáo buộc Kiev phóng đại quân số lực lượng này. </p></li>
+                            </ul>
+                            <hr>
+                        </li></a>
+                    </ul>
+                    <div class="container__content col-lg-7">
+                        <!-- <li class="container__left--item"><div class="line" style="height: 100%; width: 0.5px;margin-left: -23px;border:0.1px solid #d3d3d3; background-color: #d3d3d3; opacity: 0.6;"></div></li> -->
+                        <ul class="container__header">
+                            <a href="" class="active"><li class="container__header">
+                                <p class="container__header--item">Kinh doanh</p>
+                            </li></a>
+                            <a href=""><li class="container__header">
+                                <p class="container__header--item">Quốc tế</p>
+                            </li></a>
+                            <a href=""><li class="container__header">
+                                <p class="container__header--item">Doanh nghiệp</p>
+                            </li></a>
+                            <a href=""><li class="container__header">
+                                <p class="container__header--item">Chứng Khoán</p>
+                            </li></a>
+                            <a href=""><li class="container__header">
+                                <p class="container__header--item">Bất động sản</p>
+                            </li></a>
+                            <a href=""><li class="container__header">
+                                <p class="container__header--item">Bảo hiểm</p>
+                            </li></a>
+                        
+                        </ul>
+                        <ul class="container__left col-12">
+                            <li class="container__left col-lg-8 p-0">
+                                <ul class="container__left--item col-lg-12">
+                                    <a href=""><li class="container__left--item col-lg-6 p-0"><img src="/img/d1.png" alt=""></li></a>
+                                    <a href=""><li class="container__left--item col-lg-11">
+                                        <h5>VCCI: Cửa hàng tiện lợi không thể chỉ bán cho khách trong phạm vi 500 m</h5>
+                                        <p>VCCI đề nghị Bộ Công Thương bỏ các đề xuất không khả thi, thiếu minh bạch và dễ ... </p>
+                                    </li></a>
+                                </ul>
+                            </li>
+                            <li class="container__left--item"><div class="line" style="height: 100%; width: 0.5px;margin-left: -23px;border:0.1px solid #d3d3d3; background-color: #d3d3d3; opacity: 0.6;"></div></li>
+                            <li class="container__left col-lg-4 p-0">
+                                <a href=""><h5>Giá Bitcoin được dự báo về 10.000 USD</h5></a>
+                                <a href=""><p>Nhà đầu tư tại Wall Street cho rằng Bitcoin sẽ nhanh chóng quay về mốc 10.000 USD sau nhiều tin tức xấu về thị trường tiền số gần đây.   <i class="ri-chat-4-fill"> 24</i> </p></a>
+                            </li>
+                        </ul>
+                        <hr>
+                        <ul class="container__footer col-lg-12">
+                            <a href="" class="col-lg-4 p-3"><li class="container__footer">Giá Bitcoin được dự báo về 10.000 USD <i class="  ri-chat-4-fill">  31</i></li></a>
+                            <a href="" class="col-lg-4 p-3"><li class="container__footer">Công ty của Bầu Đức lãi cao nhất 5 năm <i class="  ri-chat-4-fill">  18</i></li></a>
+                            <a href="" class="col-lg-4 p-3"><li class="container__footer">Giá thép giảm lần thứ 8 liên tiếp <i class="  ri-chat-4-fill">  12</i></li></a>
+                        </ul>
+                        <hr>
+                        <!-- Title -->
+                        <ul class="container__header">
+                            <a href="" class="active"><li class="container__header">
+                                <p class="container__header--item">Thể thao</p>
+                            </li></a>
+                            <a href=""><li class="container__header">
+                                <p class="container__header--item">Bóng đá</p>
+                            </li></a>
+                            <a href=""><li class="container__header">
+                                <p class="container__header--item">Lịch thi đấu</p>
+                            </li></a>
+                            <a href=""><li class="container__header">
+                                <p class="container__header--item">Tennis</p>
+                            </li></a>
+                            <a href=""><li class="container__header">
+                                <p class="container__header--item">VM 2022</p>
+                            </li></a>
+                            <a href=""><li class="container__header">
+                                <p class="container__header--item">V-Race</p>
+                            </li></a>   
+                            <a href=""><li class="container__header">
+                                <p class="container__header--item">V-league</p>
+                            </li></a>   
+                        </ul>
+                        <ul class="container__left col-12">
+                            <li class="container__left col-lg-8 p-0">
+                                <ul class="container__left--item col-lg-12">
+                                    <a href=""><li class="container__left--item col-lg-6 p-0"><img src="/img/sport.jpg" alt=""></li></a>
+                                    <a href=""><li class="container__left--item col-lg-12">
+                                        <h5>Quang Hải được khuyên làm quen với những cú huých</h5>
+                                        <p>Chia sẻ với VnExpress, phóng viên Laurent Vignasse của tờ La République des Pyrénées cho rằng tiền vệ ... </p>
+                                    </li></a>
+                                </ul>
+                            </li>
+                            <li class="container__left--item"><div class="line" style="height: 100%; width: 0.5px;margin-left: -23px;border:0.1px solid #d3d3d3; background-color: #d3d3d3; opacity: 0.6;"></div></li>
+                            <li class="container__left col-lg-4 p-0">
+                                <a href=""><h5>Dương Thúy Vi giành HC vàng World Games 2022</h5></a>
+                                <a href=""><p>Võ sĩ wushu Dương Thúy Vi vô địch nội dung biểu diễn kiếm thuật và thương thuật, tại Đại hội Thể thao Thế giới 2022 tối 12/7. <i class="ri-chat-4-fill"> 24</i> </p></a>
+                            </li>
+                        </ul>
+                        <hr>
+                        <ul class="container__footer col-lg-14">
+                           <a href="" class="col-lg-4 p-3"><li class="container__footer">Việt Nam - Malaysia: Tiến vào chung kết U19 Đông Nam Á <i class="  ri-chat-4-fill">  31</i></li></a>
+                           <a href="" class="col-lg-4 p-3"><li class="container__footer">Cách ứng phó sốc nhiệt khi chạy mùa hè <i class="  ri-chat-4-fill">  18</i></li></a>
+                           <a href="" class="col-lg-4 p-3"><li class="container__footer">Quang Liêm dẫn đầu Biel Grandmaster <i class="  ri-chat-4-fill">  12</i></li></a>
+                        </ul>
+                        <hr>
+                        <!-- Title -->
+                        <!-- Title -->
+                        <ul class="container__header">
+                            <a href="" class="active"><li class="container__header">
+                                <p class="container__header--item">Giải trí</p>
+                            </li></a>
+                            <a href=""><li class="container__header">
+                                <p class="container__header--item">Giới sao</p>
+                            </li></a>
+                            <a href=""><li class="container__header">
+                                <p class="container__header--item">Phim</p>
+                            </li></a>
+                            <a href=""><li class="container__header">
+                                <p class="container__header--item">Nhạc</p>
+                            </li></a>
+                            <a href=""><li class="container__header">
+                                <p class="container__header--item">Thời trang</p>
+                            </li></a>
+                            <a href=""><li class="container__header">
+                                <p class="container__header--item">Sách</p>
+                            </li></a>   
+                        </ul>
+                        <ul class="container__left col-12">
+                            <li class="container__left col-lg-8 p-0">
+                                <ul class="container__left--item col-lg-12">
+                                    <a href=""><li class="container__left--item col-lg-6 p-0"><img src="/img/entertainment.jpg" alt=""></li></a>
+                                    <a href=""><li class="container__left--item col-lg-12">
+                                        <h5>Quang Hải được khuyên làm quen với những cú huých</h5>
+                                        <p>Chia sẻ với VnExpress, phóng viên Laurent Vignasse của tờ La République des Pyrénées cho rằng tiền vệ ... </p>
+                                    </li></a>
+                                </ul>
+                            </li>
+                            <li class="container__left--item"><div class="line" style="height: 100%; width: 0.5px;margin-left: -23px;border:0.1px solid #d3d3d3; background-color: #d3d3d3; opacity: 0.6;"></div></li>
+                            <li class="container__left col-lg-4 p-0">
+                                <a href=""><h5>Dương Thúy Vi giành HC vàng World Games 2022</h5></a>
+                                <a href=""><p>Võ sĩ wushu Dương Thúy Vi vô địch nội dung biểu diễn kiếm thuật và thương thuật, tại Đại hội Thể thao Thế giới 2022 tối 12/7. <i class="ri-chat-4-fill"> 24</i> </p></a>
+                            </li>
+                        </ul>
+                        <hr>
+                        <ul class="container__footer col-lg-14">
+                            <a href="" class="col-lg-4 p-3"><li class="container__footer">Việt Nam - Malaysia: Tiến vào chung kết U19 Đông Nam Á <i class="  ri-chat-4-fill">  31</i></li></a>
+                            <a href="" class="col-lg-4 p-3"><li class="container__footer">Cách ứng phó sốc nhiệt khi chạy mùa hè <i class="  ri-chat-4-fill">  18</i></li></a>
+                            <a href="" class="col-lg-4 p-3"><li class="container__footer">Quang Liêm dẫn đầu Biel Grandmaster <i class="  ri-chat-4-fill">  12</i></li></a>
+                        </ul>
+                        <hr>
+                        <!-- Title -->
+                        <!-- Title -->
+                        <ul class="container__header">
+                            <a href="" class="active"><li class="container__header">
+                                <p class="container__header--item">Sức khỏe</p>
+                            </li></a>
+                            <a href=""><li class="container__header">
+                                <p class="container__header--item">Tin tức</p>
+                            </li></a>
+                            <a href=""><li class="container__header">
+                                <p class="container__header--item">Dinh dưỡng</p>
+                            </li></a>
+                            <a href=""><li class="container__header">
+                                <p class="container__header--item">Khỏe đẹp</p>
+                            </li></a>
+                            <a href=""><li class="container__header">
+                                <p class="container__header--item">Các bệnh</p>
+                            </li></a>
+                            <a href=""><li class="container__header">
+                                <p class="container__header--item">Vắc xin</p>
+                            </li></a>   
+                            <a href=""><li class="container__header">
+                                <p class="container__header--item">Di chứng covid</p>
+                            </li></a>   
+                            <a href=""><li class="container__header">
+                                <p class="container__header--item">Di truyền</p>
+                            </li></a>   
+                        </ul>
+                        <ul class="container__left col-12">
+                            <li class="container__left col-lg-8 p-0">
+                                <ul class="container__left--item col-lg-12">
+                                    <a href=""><li class="container__left--item col-lg-6 p-0"><img src="/img/helth.jpg" alt=""></li></a>
+                                    <a href=""><li class="container__left--item col-lg-12">
+                                        <h5>Quang Hải được khuyên làm quen với những cú huých</h5>
+                                        <p>Chia sẻ với VnExpress, phóng viên Laurent Vignasse của tờ La République des Pyrénées cho rằng tiền vệ ... </p>
+                                    </li></a>
+                                </ul>
+                            </li>
+                            <li class="container__left--item"><div class="line" style="height: 100%; width: 0.5px;margin-left: -23px;border:0.1px solid #d3d3d3; background-color: #d3d3d3; opacity: 0.6;"></div></li>
+                            <li class="container__left col-lg-4 p-0">
+                                <a href=""><h5>Dương Thúy Vi giành HC vàng World Games 2022</h5></a>
+                                <a href=""><p>Võ sĩ wushu Dương Thúy Vi vô địch nội dung biểu diễn kiếm thuật và thương thuật, tại Đại hội Thể thao Thế giới 2022 tối 12/7. <i class="ri-chat-4-fill"> 24</i> </p></a>
+                            </li>
+                        </ul>
+                        <hr>
+                        <ul class="container__footer col-lg-14">
+                            <a href="" class="col-lg-4 p-3"><li class="container__footer">Việt Nam - Malaysia: Tiến vào chung kết U19 Đông Nam Á <i class="  ri-chat-4-fill">  31</i></li></a>
+                            <a href="" class="col-lg-4 p-3"><li class="container__footer">Cách ứng phó sốc nhiệt khi chạy mùa hè <i class="  ri-chat-4-fill">  18</i></li></a>
+                            <a href="" class="col-lg-4 p-3"><li class="container__footer">Quang Liêm dẫn đầu Biel Grandmaster <i class="  ri-chat-4-fill">  12</i></li></a>
+                        </ul>
+                        <hr>
+                        <!-- Title -->
+                        <!-- Title -->
+                        <ul class="container__header">
+                            <a href="" class="active"><li class="container__header">
+                                <p class="container__header--item">Đời sống</p>
+                            </li></a>
+                            <a href=""><li class="container__header">
+                                <p class="container__header--item">Bài học sống</p>
+                            </li></a>
+                            <a href=""><li class="container__header">
+                                <p class="container__header--item">Tổ ấm</p>
+                            </li></a>
+                            <a href=""><li class="container__header">
+                                <p class="container__header--item">Nhà</p>
+                            </li></a>
+                            <a href=""><li class="container__header">
+                                <p class="container__header--item">Tiêu dùng</p>
+                            </li></a> 
+                            <a href=""><li class="container__header">
+                                <img src="/img/e-cooking.svg" class="container__header--item" style="height: 25px; width: 50px;">
+                            </li></a> 
+                        </ul>
+                        <ul class="container__left col-12">
+                            <li class="container__left col-lg-8 p-0">
+                                <ul class="container__left--item col-lg-12">
+                                    <a href=""><li class="container__left--item col-lg-6 p-0"><img src="/img/life.jpg" alt=""></li></a>
+                                    <a href=""><li class="container__left--item col-lg-12">
+                                        <h5>Quang Hải được khuyên làm quen với những cú huých</h5>
+                                        <p>Chia sẻ với VnExpress, phóng viên Laurent Vignasse của tờ La République des Pyrénées cho rằng tiền vệ ... </p>
+                                    </li></a>
+                                </ul>
+                            </li>
+                            <li class="container__left--item"><div class="line" style="height: 100%; width: 0.5px;margin-left: -23px;border:0.1px solid #d3d3d3; background-color: #d3d3d3; opacity: 0.6;"></div></li>
+                            <li class="container__left col-lg-4 p-0">
+                                <a href=""><h5>Dương Thúy Vi giành HC vàng World Games 2022</h5></a>
+                                <a href=""><p>Võ sĩ wushu Dương Thúy Vi vô địch nội dung biểu diễn kiếm thuật và thương thuật, tại Đại hội Thể thao Thế giới 2022 tối 12/7. <i class="ri-chat-4-fill"> 24</i> </p></a>
+                            </li>
+                        </ul>
+                        <hr>
+                        <ul class="container__footer col-lg-14">
+                            <a href="" class="col-lg-4 p-3"><li class="container__footer">Việt Nam - Malaysia: Tiến vào chung kết U19 Đông Nam Á <i class="  ri-chat-4-fill">  31</i></li></a>
+                            <a href="" class="col-lg-4 p-3"><li class="container__footer">Cách ứng phó sốc nhiệt khi chạy mùa hè <i class="  ri-chat-4-fill">  18</i></li></a>
+                            <a href="" class="col-lg-4 p-3"><li class="container__footer">Quang Liêm dẫn đầu Biel Grandmaster <i class="  ri-chat-4-fill">  12</i></li></a>
+                        </ul>
+                        <hr>
+                        <!-- Title -->
+                        <!-- Title -->
+                        <ul class="container__header">
+                            <a href="" class="active"><li class="container__header">
+                                <p class="container__header--item">Khoa học</p>
+                            </li></a>
+                            <a href=""><li class="container__header">
+                                <p class="container__header--item">Trong nước</p>
+                            </li></a>
+                            <a href=""><li class="container__header">
+                                <p class="container__header--item">Phát minh</p>
+                            </li></a>
+                            <a href=""><li class="container__header">
+                                <p class="container__header--item">Ứng dụng</p>
+                            </li></a>
+                            <a href=""><li class="container__header">
+                                <p class="container__header--item">Thế giới tự nhiên</p>
+                            </li></a> 
+                            <a href=""><li class="container__header">
+                                <img class="container__header--item" src="/img/link_Ai4VN.svg">
+                            </li></a> 
+                        </ul>
+                        <ul class="container__left col-12">
+                            <li class="container__left col-lg-8 p-0">
+                                <ul class="container__left--item col-lg-12">
+                                    <a href=""><li class="container__left--item col-lg-6 p-0"><img src="/img/khoahoc.jpg" alt=""></li></a>
+                                    <a href=""><li class="container__left--item col-lg-12">
+                                        <h5>Quang Hải được khuyên làm quen với những cú huých</h5>
+                                        <p>Chia sẻ với VnExpress, phóng viên Laurent Vignasse của tờ La République des Pyrénées cho rằng tiền vệ ... </p>
+                                    </li></a>
+                                </ul>
+                            </li>
+                            <li class="container__left--item"><div class="line" style="height: 100%; width: 0.5px;margin-left: -23px;border:0.1px solid #d3d3d3; background-color: #d3d3d3; opacity: 0.6;"></div></li>
+                            <li class="container__left col-lg-4 p-0">
+                                <a href=""><h5>Dương Thúy Vi giành HC vàng World Games 2022</h5></a>
+                                <a href=""><p>Võ sĩ wushu Dương Thúy Vi vô địch nội dung biểu diễn kiếm thuật và thương thuật, tại Đại hội Thể thao Thế giới 2022 tối 12/7. <i class="ri-chat-4-fill"> 24</i> </p></a>
+                            </li>
+                        </ul>
+                        <hr>
+                        <ul class="container__footer col-lg-14">
+                            <a href="" class="col-lg-4 p-3"><li class="container__footer">Việt Nam - Malaysia: Tiến vào chung kết U19 Đông Nam Á <i class="  ri-chat-4-fill">  31</i></li></a>
+                            <a href="" class="col-lg-4 p-3"><li class="container__footer">Cách ứng phó sốc nhiệt khi chạy mùa hè <i class="  ri-chat-4-fill">  18</i></li></a>
+                            <a href="" class="col-lg-4 p-3"><li class="container__footer">Quang Liêm dẫn đầu Biel Grandmaster <i class="  ri-chat-4-fill">  12</i></li></a>
+                        </ul>
+                        <hr>
+                        <!-- Title -->
+                        <!-- Title -->
+                        <ul class="container__header">
+                            <a href="" class="active"><li class="container__header">
+                                <p class="container__header--item">Giáo dục</p>
+                            </li></a>
+                            <a href=""><li class="container__header">
+                                <p class="container__header--item">Tin tức</p>
+                            </li></a>
+                            <a href=""><li class="container__header">
+                                <p class="container__header--item">Tuyển sinh</p>
+                            </li></a>
+                            <a href=""><li class="container__header">
+                                <p class="container__header--item">Chân dung</p>
+                            </li></a>
+                            <a href=""><li class="container__header">
+                                <p class="container__header--item">Du học</p>
+                            </li></a> 
+                            <a href=""><li class="container__header">
+                                <p class="container__header--item">Giáo dục 4.0</p>
+                            </li></a> 
+                            <a href=""><li class="container__header">
+                                <img class="container__header--item" src="/img/block_diemthilop10_2022.jpg" style="height: 25px; width: 150px;">
+                            </li></a> 
+                        </ul>
+                        <ul class="container__left col-12">
+                            <li class="container__left col-lg-8 p-0">
+                                <ul class="container__left--item col-lg-12">
+                                    <a href=""><li class="container__left--item col-lg-6 p-0"><img src="/img/nhmtrngcimchuntrung-1657649807-6022-1657673989.jpg" alt=""></li></a>
+                                    <a href=""><li class="container__left--item col-lg-12">
+                                        <h5>Top 10 trường có điểm chuẩn lớp 10 tăng mạnh nhất TP HCM</h5>
+                                        <p>62 trong 108 trường THPT có điểm chuẩn vào lớp 10 tăng so với năm 2020, trong đó THPT Nam Sài Gòn có mức tăng ... </p>
+                                    </li></a>
+                                </ul>
+                            </li>
+                            <li class="container__left--item"><div class="line" style="height: 100%; width: 0.5px;margin-left: -23px;border:0.1px solid #d3d3d3; background-color: #d3d3d3; opacity: 0.6;"></div></li>
+                            <li class="container__left col-lg-4 p-0">
+                                <a href=""><h5>Hiệu trưởng thuê người nhập điểm học bạ bị khiển trách</h5></a>
+                                <a href=""><p>Đồng tháp: Bà Trương Thị Bạch Yến, Hiệu trưởng THPT TP Sa Đéc, bị kỷ luật khiển trách vì sai phạm về ... <i class="ri-chat-4-fill"> 24</i> </p></a>
+                            </li>
+                        </ul>
+                        <hr>
+                        <ul class="container__footer col-lg-12">
+                            <a href="" class="col-lg-4 p-3"><li class="container__footer">Bài toán tìm kho báu của học sinh lớp 6 <i class="  ri-chat-4-fill">  31</i></li></a>
+                            <a href="" class="col-lg-4 p-3"><li class="container__footer">Bộ Giáo dục giảm 18 tiết mỗi năm khi Lịch sử có phần bắt buộc <i class="  ri-chat-4-fill">  18</i></li></a>
+                            <a href="" class="col-lg-4 p-3"><li class="container__footer">Trường có ba lớp đỗ chuyên 100% <i class="  ri-chat-4-fill">  12</i></li></a>
+                        </ul>
+                        <hr>
+                        <!-- Title -->
+                        <form action="" class="dangky">
+                            <span>Đăng ký nhận điểm thi THPT</span>
+                            <input type="email" placeholder="Email">
+                            <input type="text" placeholder="Số báo danh">
+                            <input type="submit" placeholder="" value="Hoàn tất">
+                        </form>
+                    </div>
+                </div>
+                <hr>
+                <div class="container__commercial">
+                    <ul class="container__commercial">
+                        <li class="container__commercial"><i class="ri-line-chart-fill" style="font-size: 20px; padding-right: 5px; margin-bottom:5px;"></i><span style="color: #797979; font-weight: 500;">Chủ đề</span></li>
+                        <li class="container__commercial"><a href="#">Thi tốt nghiệp THPT 2022</a></li>
+                        <li class="container__commercial"><a href="#">Giá sách giáo khoa mới</a></li>
+                        <li class="container__commercial"><a href="#">Đề án đưa 5 huyện ở TPHCM lên quận</a></li>
+                    </ul>
+                </div>
+                <hr>
+            <!-- Video -->
+            <div class="container__video row p-0">
+                <div class="container__video__top col-lg-12 p-0">
+                    <ul class="container__video--top col-lg-12">
+                        <a href=""><li class="container__video--top active">Video</li></a>
+                        <a href=""><li class="container__video--top">Thời sự</li></a>
+                        <a href=""><li class="container__video--top">Nhịp sống</li></a>
+                        <a href=""><li class="container__video--top">Food</li></a>
+                        <a href=""><li class="container__video--top">Cuộc sống 4.0</li></a>
+                        <a href=""><li class="container__video--top">Tôi kể</li></a>
+                        <a href=""><li class="container__video--top">Chuyện núi rừng</li></a>
+                        <a href=""><li class="container__video--top">Nguy cơ</li></a>
+                    </ul>
+                </div>
+            </div>
+            <div class="container__video row">
+                <div class="container__video--left col-lg-8 p-0">
+                    <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1" height="auto; width:100%;" ></iframe>
+                    <h3 style="color:#333;">Xây bồn tắm ngoài ban công rợp bóng cây</h3>
+                </div>
+                <div class="container__video--right col-lg-4 p-0">
+                    <ul class="container__video--right">
+                        <li class="container__video--right">
+                            <div class="video__right--item col-lg-12">
+                                <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1" height="80px; width:100px;" class="col-lg-6"></iframe>
+                                <ul class="video__right--item">
+                                    <li class="video__right--item">
+                                        <p>Xây bồn tắm ngoài ban công rợp bóng cây</p>
+                                    </li>
+                                    <li class="video__right--item">
+                                        <span>Nhịp sống</span>
+                                        <i class="ri-chat-2-fill"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="line" style="height: 1px; width:calc(100% -10px); border:0.5px solid #ddd; background-color: #ddd; margin: 10px 0px 10px 15px;" ></div>
+                        </li>
+                        <li class="container__video--right">
+                            <div class="video__right--item col-lg-12">
+                                <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1" height="80px; width:100px;" class="col-lg-6"></iframe>
+                                <ul class="video__right--item">
+                                    <li class="video__right--item">
+                                        <p>Xây bồn tắm ngoài ban công rợp bóng cây</p>
+                                    </li>
+                                    <li class="video__right--item">
+                                        <span>Nhịp sống</span>
+                                        <i class="ri-chat-2-fill"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="line" style="height: 1px; width:calc(100% -10px); border:0.5px solid #ddd; background-color: #ddd; margin: 10px 0px 10px 15px;" ></div>
+                        </li>
+                        <li class="container__video--right">
+                            <div class="video__right--item col-lg-12">
+                                <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1" height="80px; width:100px;" class="col-lg-6"></iframe>
+                                <ul class="video__right--item">
+                                    <li class="video__right--item">
+                                        <p>Xây bồn tắm ngoài ban công rợp bóng cây</p>
+                                    </li>
+                                    <li class="video__right--item">
+                                        <span>Nhịp sống</span>
+                                        <i class="ri-chat-2-fill"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="line" style="height: 1px; width:calc(100% -10px); border:0.5px solid #ddd; background-color: #ddd; margin: 10px 0px 10px 15px;" ></div>
+                        </li>
+                        <li class="container__video--right">
+                            <div class="video__right--item col-lg-12">
+                                <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1" height="80px; width:100px;" class="col-lg-6"></iframe>
+                                <ul class="video__right--item">
+                                    <li class="video__right--item">
+                                        <p>Xây bồn tắm ngoài ban công rợp bóng cây</p>
+                                    </li>
+                                    <li class="video__right--item">
+                                        <span>Nhịp sống</span>
+                                        <i class="ri-chat-2-fill"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="line" style="height: 1px; width:calc(100% -10px); border:0.5px solid #ddd; background-color: #ddd; margin: 10px 0px 10px 15px;" ></div>
+                        </li>
+                        <li class="container__video--right">
+                            <div class="video__right--item col-lg-12">
+                                <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1" height="80px; width:100px;" class="col-lg-6"></iframe>
+                                <ul class="video__right--item">
+                                    <li class="video__right--item">
+                                        <p>Xây bồn tắm ngoài ban công rợp bóng cây</p>
+                                    </li>
+                                    <li class="video__right--item">
+                                        <span>Nhịp sống</span>
+                                        <i class="ri-chat-2-fill"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="line" style="height: 1px; width:calc(100% -10px); border:0.5px solid #ddd; background-color: #ddd; margin: 10px 0px 10px 15px;" ></div>
+                        </li>
+                    </ul>
+                </div>
+                <hr style="width: calc(100% - 25px);">
+            </div>
+            <!-- News -->
+            <div class="container__news row">
+                <div class="cotainer__news--title col-lg-12 p-3">
+                    <h4>Podcast</h4>
+                </div>
+                <div class="container__news--item col-lg-12">
+                    <ul class="container__news--item col-lg-4">
+                        <li class="container__news--item">
+                            <h6>Điểm tin 11h: Giá bất động sản liền thổ tăng mạnh; Hàng hóa chưa giảm theo giá xăng</h6>
+                            <p>Thêm nhiều người hoại tử xương hàm sau mắc Covid; Tổng thống UAE cam kết hỗ trợ an ninh năng lượng... </p>
+                        </li>
+                        <li class="container__news--item">
+                            <img src="/img/diem-tin-6h-hang-nghin-chuyen-bay-bi-cham-tong-thong-sri-lanka-co-the-toi-singapore-1657753282.jpg" alt="">
+                        </li>
+                        <li class="container__news--item">
+                            <div class="line" style="height: 100%; width:1px; background-color: #ddd; border: 0.5px solid #ddd;"></div>
+                        </li>
+                    </ul>
+                    <ul class="container__news--item col-lg-4">
+                        <li class="container__news--item">
+                            <h6>Áp lực từ 'phụ thu giáo dục'</h6>
+                            <p>Từ chối đóng tiền bồi dưỡng, tiền du lịch cho con, chị Nga bị cả giáo viên và hội phụ huynh tỏ thái...</p>
+                        </li>
+                        <li class="container__news--item">
+                            <img src="/img/ap-luc-tu-phu-thu-giao-duc-1657469135.jpg">
+                        </li>
+                        <li class="container__news--item">
+                            <div class="line" style="height: 100%; width:1px; background-color: #ddd; border: 0.5px solid #ddd;"></div>
+                        </li>
+                    </ul>
+                    <ul class="container__news--item col-lg-4">
+                        <li class="container__news--item">
+                            <h6>Lan Phương: 'Hối hận vì không tập nói giọng Nam chuẩn'</h6>
+                            <p>Lan Phương cho biết, dù được ghi nhận ở nhiều vai diễn, cô vẫn bị mất không ít cơ hội khi không nói...</p>
+                        </li>
+                        <li class="container__news--item">
+                            <img src="/img/lan-phuong-ban-dau-toi-khong-hung-thu-voi-vai-khanh-1657705069.jpg" alt="">
+                        </li>
+                    </ul>
+                    <hr>
+                </div>
+                <hr style="width: calc(100% - 50px);">
+
+                <!-- Container Category -->
+                <div class="container__category row py-3">
+                    <div class="container__category col-12 p-0">
+                        <div class="container__category--child col-lg-4 px-2">
+                            <ul class="container__category--menu">
+                                <a href=""><li class="container__category--menu active">Thời sự</li></a>
+                                <a href=""><li class="container__category--menu">Chính trị</li></a>
+                                <a href=""><li class="container__category--menu">Lao động - việc làm</li></a>
+                                <a href=""><li class="container__category--menu">Dân sinh</li></a>
+                            </ul>
+                            <ul class="container__category--item p-1">
+                                <a href=""><li class="container__category--item">
+                                    <img src="/img/category1.jpg" alt="">
+                                    <h5>Mở rộng quốc lộ 31 qua Bắc Giang</h5>
+                                    <p>Quốc lộ 31 đoạn qua vùng vải Lục Ngạn, tỉnh Bắc Giang, dài 39 km được khởi công nâng cấp, mở rộng với hơn 860 tỷ đồng vốn ngân sách, sáng 14/7. </p>
+                                </li></a>
+                                <div class="line" style="height: 1px; width: 100%; border: 0.2px solid #ddd; background-color: #ddd;"></div>
+                                <a href=""><li class="container__category--item">
+                                    <h5>Hóa chất mù mịt từ xưởng chứa clo cháy suốt 4 ngày</h5>
+                                    <p>Sau 4 ngày, khói lửa vẫn bao trùm góc xưởng thức ăn chăn nuôi và khu dân cư kế bên ở xã Lê Minh Xuân, huyện Bình Chánh.</p>
+                                </li></a>
+                            </ul>
+                        </div>
+                        <div class="line mx-1" style="height: 100%; width: 1px; border: 0.2px solid #ddd; background-color: #ddd;"></div>
+                        <div class="container__category--child col-lg-4 px-2">
+                            <ul class="container__category--menu">
+                                <a href=""><li class="container__category--menu active">Thế giới</li></a>
+                                <a href=""><li class="container__category--menu">Tư liệu</li></a>
+                                <a href=""><li class="container__category--menu">Phân tích</li></a>
+                            </ul>
+                            <ul class="container__category--item p-1">
+                                <a href=""><li class="container__category--item">
+                                    <img src="/img/category2.jpg" alt="">
+                                    <h5>Nga tố chuyên gia Mỹ giúp Ukraine khai hỏa pháo HIMARS</h5>
+                                    <p>Bộ Ngoại giao Nga cáo buộc Mỹ hỗ trợ tình báo và cử chuyên gia giúp Ukraine dùng pháo HIMARS tập kích mục tiêu ở miền đông và miền nam. </p>
+                                </li></a>
+                                <div class="line" style="height: 1px; width: 100%; border: 0.2px solid #ddd; background-color: #ddd;"></div>
+                                <a href=""><li class="container__category--item">
+                                    <h5>Bill Gates tiết lộ được vợ cũ động viên cho đi 20 tỷ USD</h5>
+                                    <p>Nhà sáng lập Microsoft cho hay vợ cũ Melinda là người đầu tiên ông thảo luận về kế hoạch cho đi 20 tỷ USD làm từ thiện và bà đã động viên ông làm điều đó. 
+                                    </p>
+                                </li></a>
+                            </ul>
+                        </div>
+                        <div class="line mx-1" style="height: 100%; width: 1px; border: 0.2px solid #ddd; background-color: #ddd;"></div>
+                        <div class="container__category--child col-lg-4 px-2">
+                            <ul class="container__category--menu">
+                                <a href=""><li class="container__category--menu active">Pháp luật</li></a>
+                                <a href=""><li class="container__category--menu">Hồ sơ phá án</li></a>
+                                <a href=""><li class="container__category--menu">Tư vấn</li></a>
+                            </ul>
+                            <ul class="container__category--item p-1">
+                                <a href=""><li class="container__category--item">
+                                    <img src="/img/category3.jpg" alt="">
+                                    <h5>Hai cựu tư lệnh cảnh sát biển bị đề nghị 15-17 năm tù</h5>
+                                    <p><b>HÀ NỘI</b> - VKS đề nghị phạt thiếu tướng Lê Văn Minh, Lê Xuân Thanh mỗi người 15-17 năm tù do nhận hối lộ để bảo kê đường dây buôn lậu 200 triệu lít xăng giả. </p>
+                                </li></a>
+                                <div class="line" style="height: 1px; width: 100%; border: 0.2px solid #ddd; background-color: #ddd;"></div>
+                                <a href=""><li class="container__category--item">
+                                    <h5>Quá hạn nộp phạt vi phạm giao thông, có được trả lại giấy tờ xe?</h5>
+                                    <p>Tháng 3/2020, em bị cảnh sát giao thông thu giấy phép lái xe nhưng chưa kịp lên nộp phạt thì đi nghĩa vụ quân sự. (Quang Thái) 
+                                    </p>
+                                </li></a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <hr style="width: calc(100% - 40px);">
+
+                <!-- Commercial -->
+                <div class="commercial row">
+                    <img src="/img/quangcao.jpeg" alt="" class="commercial col-lg-12" style="border: 0.5px solid #ddd;">
+                </div>
+                <hr style="width: calc(100% - 40px);">
+
+                <!-- container tech -->
+                <div class="container__tech row p-2">
+                    <div class="container__tech--top col-lg-12">
+                        <ul class="container__tech--top">
+                            <a href=""><li class="container__tech--top active">Du lịch</li></a>
+                            <a href=""><li class="container__tech--top ">Điểm đến</li></a>
+                            <a href=""><li class="container__tech--top ">Ẩm thực</li></a>
+                            <a href=""><li class="container__tech--top ">Dấu chân</li></a>
+                            <a href=""><li class="container__tech--top ">Tư vấn</li></a>
+                            <a href=""><li class="container__tech--top ">Cẩm nang</li></a>
+                            <a href=""><li class="container__tech--top ">Ảnh</li></a>
+                            <a href=""><li class="container__tech--top ">Ăn và chơi</li></a>
+                            <a href=""><li class="container__tech--top ">Mở cửa du lịch</li></a>
+                        </ul>
+                    </div>
+                    <div class="container__tech--bottom col-lg-12 p-0">
+                        <div class="tech__bottom--item col-lg-6">
+                            <a href="#"><img src="/img/tech1.jpg" alt=""></a>
+                            <h4>Du khách kẹt ở Phú Quốc bắt đầu về đất liền</h4>
+                            <p><i>KIÊN GIANG</i> - Sáng 14/7, trời tạnh mưa và lặng gió, bắt đầu hửng nắng, tàu ra vào Phú Quốc hoạt động trở lại, cảng Bãi Vòng chật cứng hành khách. <i class="ri-chat-2-fill"> 12</i></p>
+                        </div>
+                        <div class="line mx-1" style="height: 100%; width: 1px; border: 0.2px solid #ddd; background-color: #ddd;"></div>
+                        <div class="tech__bottom--item col-lg-3">
+                            <ul class="tech__bottom--item">
+                                <a href=""><li class="tech__bottom--item">
+                                    <img src="/img/tech2.jpg" alt="">
+                                    <h6>Đừng đến Akshardham nếu muốn sống ảo</h6>
+                                </li></a>
+                                <div class="line" style="height: 1px; width:100%; background-color: #ddd; border: 0.2px solid #ddd; margin: 10px 0;"></div>
+                                <a href=""><li class="tech__bottom--item">
+                                    <img src="/img/tech3.jpg" alt="">
+                                    <h6>Khách Việt đến Italy theo dấu chân 'Võ sĩ giác đấu'</h6>
+                                </li></a>
+                            </ul>    
+                        </div>
+                        <div class="line mx-1" style="height: 100%; width: 1px; border: 0.2px solid #ddd; background-color: #ddd;"></div>
+                        <div class="tech__bottom--item col-lg-3">
+                            <div class="tech__bottom--item">
+                                <ul class="tech__bottom--item">
+                                    <li class="tech__bottom--item--right">
+                                        <a href=""><h6 style="padding-top: 0px;">Phòng nào trong khách sạn được ưu tiên dọn trước?</h6></a>
+                                        <a href=""><img src="/img/tech4.jpg" alt=""></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="line" style="height: 1px; width:100%; background-color: #ddd; border: 0.2px solid #ddd; margin: 10px 0;"></div>
+                            <div class="tech__bottom--item">
+                                <ul class="tech__bottom--item">
+                                    <li class="tech__bottom--item--right">
+                                        <a href=""><h6 style="padding-top: 0px;">Du khách đặt cọc 'villa ma' ở Vũng Tàu  <i class="ri-chat-2-fill"> 12</i></h6></a>
+                                        <a href=""><img src="/img/tech5.jpg" alt=""></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="line" style="height: 1px; width:100%; background-color: #ddd; border: 0.2px solid #ddd; margin: 10px 0;"></div>
+                            <div class="tech__bottom--item">
+                                <ul class="tech__bottom--item">
+                                    <li class="tech__bottom--item--right">
+                                        <a href=""><h6 style="padding-top: 0px;">Du khách đặt cọc 'villa ma' ở Vũng Tàu</h6></a>
+                                        <a href=""><img src="/img/tech6.jpg" alt=""></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="line" style="height: 1px; width:100%; background-color: #ddd; border: 0.2px solid #ddd; margin: 10px 0;"></div>
+                            <div class="tech__bottom--item">
+                                <ul class="tech__bottom--item">
+                                    <li class="tech__bottom--item--right">
+                                        <a href=""><h6 style="padding-top: 0px;">Chàng trai Tây thích tắm thác, ăn bún chả Việt Nam</h6></a>
+                                        <a href=""><img src="/img/tech7.jpg" alt=""></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr style="width: calc(100% - 40px);">
+                <!-- container tech -->
+                <!-- container tech -->
+                <div class="container__tech row p-2">
+                    <div class="container__tech--top col-lg-12">
+                        <ul class="container__tech--top">
+                            <a href=""><li class="container__tech--top active">Xe</li></a>
+                            <a href=""><li class="container__tech--top ">Thị trường</li></a>
+                            <a href=""><li class="container__tech--top ">Cầm lái</li></a>
+                            <a href=""><li class="container__tech--top "><img src="/img/ico-vcar.svg" alt=""> V-car</li></a>
+                            <a href=""><li class="container__tech--top ">Diễn đàn</li></a>
+                            <a href=""><li class="container__tech--top ">Video</li></a>
+                            <a href=""><li class="container__tech--top ">Cẩm nang mua xe</li></a>
+                            <a href=""><li class="container__tech--top ">Thi bằng lái</li></a>
+                            <a href=""><li class="container__tech--top ">Mua bán</li></a>
+                        </ul>
+                    </div>
+                    <div class="container__tech--bottom col-lg-12 p-0">
+                        <div class="tech__bottom--item col-lg-6">
+                            <a href="#"><img src="/img/tech8.jpg" alt=""></a>
+                            <h4>Vạch kẻ liền sát vỉa hè có ý nghĩa gì?</h4>
+                            <p>Tôi đi trong trung tâm thành phố thấy nhiều đường có vạch kẻ liền sát vỉa hè lúc màu trắng, lúc màu vàng nhưng không biết ý nghĩa. (Hoàng Vũ)<i class="ri-chat-2-fill"> 12</i></p>
+                        </div>
+                        <div class="line mx-1" style="height: 100%; width: 1px; border: 0.2px solid #ddd; background-color: #ddd;"></div>
+                        <div class="tech__bottom--item col-lg-3">
+                            <ul class="tech__bottom--item">
+                                <a href=""><li class="tech__bottom--item">
+                                    <img src="/img/tech10.jpg" alt="">
+                                    <h6>Nissan Navara động cơ mới ra mắt Việt Nam</h6>
+                                </li></a>
+                                <div class="line" style="height: 1px; width:100%; background-color: #ddd; border: 0.2px solid #ddd; margin: 10px 0;"></div>
+                                <a href=""><li class="tech__bottom--item">
+                                    <img src="/img/tech11.jpg" alt="">
+                                    <h6>5 xe gầm cao bán nhiều nhất tháng 6 <i class="ri-chat-2-fill"> 13</i></h6>
+                                </li></a>
+                            </ul>    
+                        </div>
+                        <div class="line mx-1" style="height: 100%; width: 1px; border: 0.2px solid #ddd; background-color: #ddd;"></div>
+                        <div class="tech__bottom--item col-lg-3">
+                            <div class="tech__bottom--item">
+                                <ul class="tech__bottom--item">
+                                    <li class="tech__bottom--item--right">
+                                        <a href=""><h6 style="padding-top: 0px;">Phòng nào trong khách sạn được ưu tiên dọn trước?</h6></a>
+                                        <a href=""><img src="/img/tech12.jpg" alt=""></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="line" style="height: 1px; width:100%; background-color: #ddd; border: 0.2px solid #ddd; margin: 10px 0;"></div>
+                            <div class="tech__bottom--item">
+                                <ul class="tech__bottom--item">
+                                    <li class="tech__bottom--item--right">
+                                        <a href=""><h6 style="padding-top: 0px;">Du khách đặt cọc 'villa ma' ở Vũng Tàu  <i class="ri-chat-2-fill"> 12</i></h6></a>
+                                        <a href=""><img src="/img/tech13.jpg" alt=""></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="line" style="height: 1px; width:100%; background-color: #ddd; border: 0.2px solid #ddd; margin: 10px 0;"></div>
+                            <div class="tech__bottom--item">
+                                <ul class="tech__bottom--item">
+                                    <li class="tech__bottom--item--right">
+                                        <a href=""><h6 style="padding-top: 0px;">Du khách đặt cọc 'villa ma' ở Vũng Tàu</h6></a>
+                                        <a href=""><img src="/img/tech14.jpg" alt=""></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="line" style="height: 1px; width:100%; background-color: #ddd; border: 0.2px solid #ddd; margin: 10px 0;"></div>
+                            <div class="tech__bottom--item">
+                                <ul class="tech__bottom--item">
+                                    <li class="tech__bottom--item--right">
+                                        <a href=""><h6 style="padding-top: 0px;">Chàng trai Tây thích tắm thác, ăn bún chả Việt Nam</h6></a>
+                                        <a href=""><img src="/img/tech15.jpg" alt=""></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr style="width: calc(100% - 40px);">
+                <!-- container tech -->
+                <!-- container tech -->
+                <div class="container__tech row p-2">
+                    <div class="container__tech--top col-lg-12">
+                        <ul class="container__tech--top">
+                            <a href=""><li class="container__tech--top active">Số hóa</li></a>
+                            <a href=""><li class="container__tech--top ">Công nghệ</li></a>
+                            <a href=""><li class="container__tech--top ">Sản phẩm</li></a>
+                            <a href=""><li class="container__tech--top ">Blockchain</li></a>
+                            <a href=""><li class="container__tech--top ">Tech Awards 2022</li></a>
+                            <a href=""><li class="container__tech--top ">Startup</li></a>
+                        </ul>
+                    </div>
+                    <div class="container__tech--bottom col-lg-12 p-0">
+                        <div class="tech__bottom--item col-lg-6">
+                            <a href="#"><img src="/img/tech16.jpg" alt=""></a>
+                            <h4>Elon Musk ví pin lithium là dầu mỏ kiểu mới</h4>
+                            <p>Tỷ phú Elon Musk cho rằng an ninh năng lượng đóng vai trò quan trọng với quốc gia và pin lithium có thể được xem như một loại dầu mỏ. </p>
+                        </div>
+                        <div class="line mx-1" style="height: 100%; width: 1px; border: 0.2px solid #ddd; background-color: #ddd;"></div>
+                        <div class="tech__bottom--item col-lg-3">
+                            <ul class="tech__bottom--item">
+                                <a href=""><li class="tech__bottom--item">
+                                    <img src="/img/tech18.jpg" alt="">
+                                    <h6>Xiaomi Smart Band 7 Pro có GPS về Việt Nam</h6>
+                                </li></a>
+                                <div class="line" style="height: 1px; width:100%; background-color: #ddd; border: 0.2px solid #ddd; margin: 10px 0;"></div>
+                                <a href=""><li class="tech__bottom--item">
+                                    <img src="/img/tech19.png" alt="">
+                                    <h6>Cơn sốt Free Mint NFT giữa mùa đông tiền số<i class="ri-chat-2-fill"> 13</i></h6>
+                                </li></a>
+                            </ul>    
+                        </div>
+                        <div class="line mx-1" style="height: 100%; width: 1px; border: 0.2px solid #ddd; background-color: #ddd;"></div>
+                        <div class="tech__bottom--item col-lg-3">
+                            <div class="tech__bottom--item">
+                                <ul class="tech__bottom--item">
+                                    <li class="tech__bottom--item--right">
+                                        <a href=""><h6 style="padding-top: 0px;">Phòng nào trong khách sạn được ưu tiên dọn trước?</h6></a>
+                                        <a href=""><img src="/img/tech20.jpg" alt=""></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="line" style="height: 1px; width:100%; background-color: #ddd; border: 0.2px solid #ddd; margin: 10px 0;"></div>
+                            <div class="tech__bottom--item">
+                                <ul class="tech__bottom--item">
+                                    <li class="tech__bottom--item--right">
+                                        <a href=""><h6 style="padding-top: 0px;">Du khách đặt cọc 'villa ma' ở Vũng Tàu  <i class="ri-chat-2-fill"> 12</i></h6></a>
+                                        <a href=""><img src="/img/tech21.jpg" alt=""></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="line" style="height: 1px; width:100%; background-color: #ddd; border: 0.2px solid #ddd; margin: 10px 0;"></div>
+                            <div class="tech__bottom--item">
+                                <ul class="tech__bottom--item">
+                                    <li class="tech__bottom--item--right">
+                                        <a href=""><h6 style="padding-top: 0px;">Du khách đặt cọc 'villa ma' ở Vũng Tàu</h6></a>
+                                        <a href=""><img src="/img/tech22.jpg" alt=""></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="line" style="height: 1px; width:100%; background-color: #ddd; border: 0.2px solid #ddd; margin: 10px 0;"></div>
+                            <div class="tech__bottom--item">
+                                <ul class="tech__bottom--item">
+                                    <li class="tech__bottom--item--right">
+                                        <a href=""><h6 style="padding-top: 0px;">Chàng trai Tây thích tắm thác, ăn bún chả Việt Nam</h6></a>
+                                        <a href=""><img src="/img/tech15.jpg" alt=""></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr style="width: calc(100% - 40px);">
+                <!-- container tech -->
+                <!-- Commercial -->
+                 <div class="commercial row">
+                    <img src="/img/quangcao.jpeg" alt="" class="commercial col-lg-12" style="border: 0.5px solid #ddd;">
+                </div>
+                <hr style="width: calc(100% - 40px);">
+                <!-- Container  -->
+                <div class="container__end row p-0">
+                    <div class="container__end col-lg-12">
+                        <div class="container__end--item col-lg-8">
+                            <div class="container__end--item">
+                                <ul class="container__end--item">
+                                    <a href=""><li class="container__end--item active">
+                                        Tâm sự
+                                    </li></a>
+                                    <a href=""><li class="container__end--item">
+                                        Chuyên gia gỡ rối
+                                    </li></a>    
+                                    <a href=""><li class="container__end--item">
+                                        Hẹn hò
+                                    </li></a>    
+                                </ul>
+                                <ul class="container__end--bottom col-lg-12 p-0">
+                                    <li class="container__end--bottom col-lg-6">
+                                        <h5>Có tình cảm với nữ sinh viên</h5>
+                                        <p>Ở tuổi 27, sau bao năm cố gắng tôi đã tốt nghiệp thạc sĩ và là giảng viên, sẽ không có gì đáng nói nếu tôi không gặp em.
+
+                                            Với tư cách là giảng viên trẻ, tôi luôn có tinh thần ham học hỏi, cầu tiến để giúp các bạn sinh viên có thể nắm vững kiến thức. Tôi sẵn sàng chia sẻ hết thảy những kinh nghiệm khi còn đi học cũng như trong quá trình thực tập trước đây của mình cho họ.Em là cô gái với tinh thần lạc quan,...</p>
+                                    </li>
+                                    <li class="container__end--bottom col-lg-6">
+                                        <div class="end__bottom--item">
+                                            <h6>Quan niệm tiền bạc lạ của nhà chồng</h6>
+                                            <p>Tôi 29 tuổi, chồng là bạn học thời cấp hai, quen nhau sáu năm, hai đứa làm đám cưới và sống chung từ đầu năm 2022. <i class="ri-chat-2-fill"> 18</i></p>
+                                        </div>
+                                        <div class="end__bottom--item">
+                                            <h6>Luôn phòng thủ với bố mẹ chồng</h6>
+                                            <p>Lý do tôi phải sống như thế vì ba mẹ chồng hay tìm cách dồn tôi vào đường cùng bằng mọi giá. <i class="ri-chat-2-fill"> 12</i></p>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="line" style="height: 1px; width:100%; background-color: #ddd; border:0.2px solid #ddd;"></div>
+                            </div>
+                            <div class="container__end--itembottom  col-lg-12 p-0">
+                                <div class="container__end--child col-lg-6 p-0">
+                                    <h5>Ý kiến</h5>
+                                    <div class="end__child--itemchild">
+                                        <a href=""><h5>'Tăng tiền để bù lỗ nếu bị thuế BĐS thứ hai cao'</h5></a>
+                                        <p>Ở thành phố lớn, nguồn cung nhà trọ luôn nhỏ hơn cầu, vì thế nếu bị thu một đồng tiền thuế, tôi sẽ tăng giá thuê để bù vào. </p>
+                                    </div>
+                                    <div class="end__child--item">
+                                        <a href=""><h6>Công ty tuyển dụng không trả lời ứng viên là bất lịch sự?</h6></a>
+                                        <p>Đã một tuần trôi qua kể từ buổi phỏng vấn, tôi vẫn không biết mình có được tuyển hay không? </p>
+                                    </div>
+                                    <div class="line" style="height: 1px; width:100%; background-color: #ddd; border:0.2px solid #ddd;"></div>
+                                    <div class="end__child--item">
+                                        <a href=""><h6>Lãi 80% sau bốn năm mua đất</h6></a>
+                                        <p>Nhiều người bảo chờ thị trường nhà đất đóng băng, hay bong bóng bất động sản vỡ mới mua nhà đất... nhưng điều đó rất khó xảy ra. </p>
+                                    </div>
+                                    <div class="line" style="height: 1px; width:100%; background-color: #ddd; border:0.2px solid #ddd;"></div>
+                                    <div class="end__child--item">
+                                        <a href=""><h6>Lý do tôi ép con học hành</h6></a>
+                                        <p>Con tôi ham chơi, tôi phải ép cháu học, nhưng không phải đi học thêm ngày đêm. </p>
+                                    </div>
+                                </div>
+                                <div class="line" style="margin-left:15px; margin-top: 15px; width: 100%; border: 0.2px solid #ddd; background-color: #ddd;"></div>
+                                <div class="container__end--right col-lg-6 px-3">
+                                    <ul class="container__end--right">
+                                        <a href=""><li class="container__end--right active">Hài</li></a>
+                                        <a href=""><li class="container__end--right">Cười</li></a>
+                                        <a href=""><li class="container__end--right">Đố vui</li></a>
+                                        <a href=""><li class="container__end--right">Chuyện lạ</li></a>
+                                    </ul>
+                                    <img src="/img/category2.jpg" alt="">
+                                    <div class="end__right--item">
+                                        <a href=""><h6>Tôm tít làm 'xiếc' gây ngỡ ngàng</h6></a>
+                                        <p>Cảnh tượng độc đáo này khiến người xem trầm trồ, thích thú nhưng sự thật chúng chỉ là sản phẩm tua ngược. </p>
+                                    </div>
+                                    <div class="line" style="height: 1px; width:100%; background-color: #ddd; border:0.2px solid #ddd;"></div>
+                                    <div class="end__right--item">
+                                        <a href=""><h6>Tôm tít làm 'xiếc' gây ngỡ ngàng</h6></a>
+                                        <p>Cảnh tượng độc đáo này khiến người xem trầm trồ, thích thú nhưng sự thật chúng chỉ là sản phẩm tua ngược. </p>
+                                    </div>
+                                    <div class="line" style="height: 1px; width:100%; background-color: #ddd; border:0.2px solid #ddd;"></div>
+                                    <div class="end__right--item">
+                                        <a href=""><h6>Tôm tít làm 'xiếc' gây ngỡ ngàng</h6></a>
+                                        <p>Cảnh tượng độc đáo này khiến người xem trầm trồ, thích thú nhưng sự thật chúng chỉ là sản phẩm tua ngược. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line" style="height: 100%; background-color: #ddd; border: 0.2px solid #ddd;"></div>
+                        <div class="container__end--item col-lg-4">
+                            <div class="end__item--right">
+                                <ul class="end__item--right">
+                                    <li class="end__item--right active">Ebank</li>
+                                    <li class="end__item--right">
+                                        <i class="ri-arrow-left-s-line"></i>
+                                        <i class="ri-arrow-right-s-line"></i>
+                                    </li>
+                                </ul>
+                                <div class="item__right--item">
+                                    <img src="/img/tech11.jpg" alt="">
+                                    <p>Qũy dự phòng bảo hiểm tiền gửi đạt 83.000 tỷ đồng</p>
+                                </div>
+                                <div class="item__right--item">
+                                    <img src="/img/d1.png" alt="">
+                                    <p>Tín dụng nhảy vào bất động sản vẫn tăng cao</p>
+                                </div>
+                                <div class="item__right--item">
+                                    <img src="/img/giá usd.jpg" alt="">
+                                    <p>Giá USD tự do vượt 24.300 đồng</p>
+                                </div>
+
+                            </div>
+                            <div class="end__right--img"><img src="/img/tiktokcmc.jpeg" alt="">
+                            <i class="ri-close-line"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <hr style="width: calc(100% - 40px);">
+                <!-- Commercial -->
+                <div class="commercial row">
+                    <img src="/img/quangcao.jpeg" alt="" class="commercial col-lg-12" style="border: 0.5px solid #ddd;">
+                </div>
+                <hr style="width: calc(100% - 40px);">
+
+                <!-- Infographi -->
+                <div class="container__info row">
+                    <div class="container__info col-lg-12 p-0">
+                        <div class="info__left col-lg-8 p-0">
+                            <h5>Infographics</h5>
+                            <ul class="info__left--item col-lg-12 px-2">
+                                <li class="info__left--item col-lg-6 p-0">
+                                    <a href=""><img src="/img/inf0.jpg" alt=""></a>
+                                    <a href=""><h6>Hơn ba tháng Sri Lanka chìm trong khủng hoảng chính trị </h6></a>
+                                </li>
+                                <li class="info__left--item col-lg-6 p-0">
+                                    <a href=""><img src="/img/inf2.jpg" alt=""></a>
+                                    <a href=""><h6>Sinh vật nào nhầy nhụa nhất hành tinh? </h6></a>
+                                </li>
+                            </ul>
+                            <div class="line" style="height: 1px; border:0.2px solid #ddd; background-color:#ddd; width:100%;"></div>
+                            <div class="info__left--item col-lg-12 p-0">
+                                <ul class="left__item--child">
+                                    <li class="left__item--child">
+                                        <a href="">Sự kiện</a>
+                                    </li>
+                                    <li class="left__item--child">
+                                        <i class="ri-arrow-left-s-line"></i>
+                                        <i class="ri-arrow-right-s-line"></i>
+                                    </li>
+                                </ul>
+                                <ul class="left__item">
+                                    <li class="left__item">
+                                        <div class="left__item--child">
+                                            <a href=""><img src="/img/sk1.jpg" alt=""></a>
+                                            <a href=""><h6>VnExpress Marathon Amazing Halong 2022</h6></a>
+                                        </div>
+                                        <div class="left__item--child">
+                                            <a href=""><img src="/img/sk3.jpg" alt=""></a>
+                                            <a href=""><h6>Kun Marathon Hạ Long 2022</h6></a>
+                                        </div>
+                                    </li>
+                                    <li class="left__item">
+                                        <div class="left__item--child">
+                                            <a href=""><img src="/img/sk3.jpg" alt=""></a>
+                                            <a href=""><h6>VnExpress Marathon Marvelous Nha Trang 2022</h6></a>
+                                        </div>
+                                        <div class="left__item--child">
+                                            <a href=""><img src="/img/sk4.jpg" alt=""></a>
+                                            <a href=""><h6>VnExpress Marathon Hanoi Midnight 2022</h6></a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="infographi__view">
+                                <h5>Xem nhiều</h5>
+                                <hr>
+                                <div class="infographi__view--container">
+                                <ul class="infograhphi__view--left col-lg-6">
+                                    <li class="infographi__view--left">
+                                        <h1 class="title">1</h1>
+                                        <p>Đòn trừng phạt của phương Tây với Nga hiệu quả tới đâu? <span></span></p>
+                                    </li>
+                                    <hr style="width: calc(100% + 30px); margin-left: -15px;">
+                                    <li class="infographi__view--left">
+                                        <h1 class="title">2</h1>
+                                        <p>Đòn trừng phạt của phương Tây với Nga hiệu quả tới đâu? <span></span></p>
+                                    </li>
+                                    <hr style="width: calc(100% + 30px); margin-left: -15px;">
+                                    <li class="infographi__view--left">
+                                        <h1 class="title">3</h1>
+                                        <p>Đòn trừng phạt của phương Tây với Nga hiệu quả tới đâu? <span></span></p>
+                                    </li>
+                                    <hr style="width: calc(100% + 30px); margin-left: -15px;">
+                                    <li class="infographi__view--left">
+                                        <h1 class="title">4</h1>
+                                        <p>Đòn trừng phạt của phương Tây với Nga hiệu quả tới đâu? <span></span></p>
+                                    </li>
+                                </ul>
+                                <div class="line" style=" margin-top: 15px; width: 2px; height: 100%; border: 0.2px solid #000; background-color: #000;"></div>
+                                <ul class="infograhphi__view--right col-lg-6">
+                                    <li class="infographi__view--left">
+                                        <h1 class="title">5</h1>
+                                        <p>Đòn trừng phạt của phương Tây với Nga hiệu quả tới đâu? <span></span></p>
+                                    </li>
+                                    <hr style="width: calc(100% + 25px); margin-left: -15px;">
+                                    <li class="infographi__view--left">
+                                        <h1 class="title">6</h1>
+                                        <p>Đòn trừng phạt của phương Tây với Nga hiệu quả tới đâu? <span></span></p>
+                                    </li>
+                                    <hr style="width: calc(100% + 30px); margin-left: -15px;">
+                                    <li class="infographi__view--left">
+                                        <h1 class="title">7</h1>
+                                        <p>Đòn trừng phạt của phương Tây với Nga hiệu quả tới đâu? <span></span></p>
+                                    </li>
+                                    <hr style="width: calc(100% + 30px); margin-left: -15px;">
+                                    <li class="infographi__view--left">
+                                        <h1 class="title">8</h1>
+                                        <p>Đòn trừng phạt của phương Tây với Nga hiệu quả tới đâu? <span></span></p>
+                                    </li>
+                                </ul>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="line" style="margin-left:15px; margin-top: 15px; width: 1px; height: 100%; border: 0.2px solid #ddd; background-color: #ddd;"></div>
+                        <div class="container__end--item col-lg-4">
+                            <div class="end__item--right">
+                                <ul class="end__item--right">
+                                    <li class="end__item--right active">Ebank</li>
+                                    <li class="end__item--right">
+                                        <i class="ri-arrow-left-s-line"></i>
+                                        <i class="ri-arrow-right-s-line"></i>
+                                    </li>
+                                </ul>
+                                <div class="item__right--item">
+                                    <img src="/img/tech11.jpg" alt="">
+                                    <p>Qũy dự phòng bảo hiểm tiền gửi đạt 83.000 tỷ đồng</p>
+                                </div>
+                                <div class="item__right--item">
+                                    <img src="/img/d1.png" alt="">
+                                    <p>Tín dụng nhảy vào bất động sản vẫn tăng cao</p>
+                                </div>
+                                <div class="item__right--item">
+                                    <img src="/img/giá usd.jpg" alt="">
+                                    <p>Giá USD tự do vượt 24.300 đồng</p>
+                                </div>
+
+                            </div>
+                            <div class="end__right--img"><img src="/img/tiktokcmc.jpeg" alt="">
+                            <i class="ri-close-line"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="line" style="height: 1px; margin-top: 30px; border:0.2px solid #ddd; background-color:#ddd; width:100%;"></div>
+                <!-- Infographi -->
+
+                <div class="container__end col-lg-12 row">
+                    <div class="container__end--item col-lg-6 p-0">
+                        <ul class="container__end--item">
+                            <li class="container__end--img">
+                                <img src="/img/phithanhvan5-1661579343-2665-1661579399.jpg" alt="">
+                            </li>
+                            <li class="container__end--title">
+                                <h6>Phi Thanh Vân: 'Cuộc hôn nhân thứ hai là sai lầm'</h6>
+                                <p>Nhìn về những đổ vỡ bằng thái độ bình thản, diễn viên Phi Thanh Vân cho biết cô từng sốc khi người chồng thứ hai xưng mày - tao, chửi tục và cầm mã tấu đập phá đồ đạc trong nhà.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="container__end--item col-6 p-0">
+                        <ul class="container__end--item">
+                            <li class="container__end--img">
+                                <img src="/img/aaa1-1661391007-1661395147.jpg" alt="">
+                            </li>
+                            <li class="container__end--title">
+                                <h6>Daily life gets colorful in outdoor exhibition</h6>
+                                <p>A group of photographers are exhibiting their collection outdoors in the Central Highlands town of Da Lat, infusing daily life with great splashes of spirit and color.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="thongtindoanhnghiep col-lg-12 p-0">
+                    <div class="thongtindoanhnghiep__top">
+                        <h6>Thông tin doanh nghiệp</h6>
+                        <div class="button__next">
+                            <i class="ri-arrow-left-s-line prev" onclick="prevButton()"></i>
+                            <i class="ri-arrow-right-s-line next" onclick="nextFucntion()"></i>
+                        </div>
+                    </div>
+                    <div class="slide__imfomation col-12 p-0">
+                        <ul class="slide__imfomation col-12 p-0">
+                            <li class="slide__imfomation--item col-lg-3">
+                                <img src="/img/if1.jpg" alt="">
+                                <p>Bình Phước hoàn tất đăng ký sử dụng đất bằng thuế điện tử</p>
+                            </li>
+                            <li class="slide__imfomation--item col-lg-3">
+                                <img src="/img/if2.png" alt="">
+                                <p>Thư viện pháp luật cung cấp tiện ích tra cứu giá đất</p>
+                            </li>
+                            <li class="slide__imfomation--item col-lg-3">
+                                <img src="/img/if3.jpg" alt="">
+                                <p>YinYangMedia hợp tác cùng với MP3</p>
+                            </li>
+                            <li class="slide__imfomation--item col-lg-3">
+                                <img src="/img/if4.png" alt="">
+                                <p>4 lý do nên chọn phòng khám đa khoa Tháng Tám</p>
+                            </li>
+                            <li class="slide__imfomation--item col-lg-3">
+                                <img src="/img/if5.jpg" alt="">
+                                <p>Bình Phước hoàn tất đăng ký sử dụng đất bằng thuế điện tử</p>
+                            </li>
+                            <li class="slide__imfomation--item col-lg-3">
+                                <img src="/img/if6.jpg" alt="">
+                                <p>Bình Phước hoàn tất đăng ký sử dụng đất bằng thuế điện tử</p>
+                            </li>
+                            <li class="slide__imfomation--item col-lg-3">
+                                <img src="/img/if7.jpg" alt="">
+                                <p>Bình Phước hoàn tất đăng ký sử dụng đất bằng thuế điện tử</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- CONTAINER -->
+
+        <div class="container">
+            
+        </div>
+        <!-- FOOTER -->
+        <footer>
+        <div class="container d-flex">
+            <div class="line" style="height: 5px; width: 100%; background-color: #ddd; border-radius: 3px solid #ddd;"></div>
+            <div class="footer__left col-lg-8 p-0 d-flex">
+                <ul class="footer__left--title col-lg-2 p-0">
+                   <a href="#"><li class="footer__left--title"><b>Trang chủ</b></li></a>
+                   <a href="#"><li class="footer__left--title"><b>Video</b></li></a>
+                   <a href="#"><li class="footer__left--title"><b>Podcasts</b></li></a>
+                   <a href="#"><li class="footer__left--title"><b>Ảnh</b></li></a>
+                   <a href="#"><li class="footer__left--title"><b>Infographics</b></li></a>
+                    <hr style="margin: 5px 0;">
+                   <a href="#"><li class="footer__left--title"><b>Mới nhất</b></li></a> 
+                   <a href="#"><li class="footer__left--title"><b>Xem nhiều</b></li></a> 
+                   <a href="#"><li class="footer__left--title"><b>Tin nóng</b></li></a> 
+                </ul>
+                <ul class="footer__left--title col-lg-2 mx-4">
+                   <a href="#"><li class="footer__left--title">Thời sự</li></a>
+                   <a href="#"><li class="footer__left--title">Góc nhìn</li></a>
+                   <a href="#"><li class="footer__left--title">Thế giới</li></a>
+                   <a href="#"><li class="footer__left--title">Kinh doanh</li></a>
+                   <a href="#"><li class="footer__left--title">Giải trí</li></a>
+                </ul>
+                <ul class="footer__left--title col-lg-2 mx-4">
+                   <a href="#"><li class="footer__left--title">Thể thao</li></a>
+                   <a href="#"><li class="footer__left--title">Pháp luật</li></a>
+                   <a href="#"><li class="footer__left--title">Sức khỏe</li></a>
+                   <a href="#"><li class="footer__left--title">Giáo dục</li></a>
+                   <a href="#"><li class="footer__left--title">Sức khỏe</li></a>
+                   <a href="#"><li class="footer__left--title">Đời sống</li></a>
+                   <a href="#"><li class="footer__left--title">Du lịch</li></a>
+                </ul>
+                <ul class="footer__left--title col-lg-2 mx-4">
+                   <a href="#"><li class="footer__left--title">Khoa học</li></a>
+                   <a href="#"><li class="footer__left--title">Số hóa</li></a>
+                   <a href="#"><li class="footer__left--title">Xe</li></a>
+                   <a href="#"><li class="footer__left--title">Ý kiến</li></a>
+                   <a href="#"><li class="footer__left--title">Tâm sự</li></a>
+                   <a href="#"><li class="footer__left--title">Hài</li></a>
+                </ul>
+                <div class="line" style="height: 100%; width: 1px; background-color: #ddd;"></div>
+                <ul class="footer__left--title col-lg-2 mx-4">
+                    <a href="#"><li class="footer__left--title">Rao vặt</li></a>
+                    <a href="#"><li class="footer__left--title">Startup</li></a>
+                    <a href="#"><li class="footer__left--title">VnExpress</li></a>
+                    <a href="#"><li class="footer__left--title">Vhome</li></a>
+                    <a href="#"><li class="footer__left--title">Ebox</li></a>
+                    <a href="#"><li class="footer__left--title">Ework</li></a>
+                </ul>
+                <div class="line" style="height: 100%; width: 5px; background-color: #ddd; border: 1px solid #ddd;"></div>
+            </div>
+            <div class="footer__right col-lg-4 mx-5">
+                <p>Tải ứng dụng</p>
+                <ul class="application">
+                    <button>
+                        <img src="/img/icon.jfif" alt="">
+                        <span>VnExpress</span>
+                    </button>
+                    <button>
+                        <img src="/img/icon.jfif" alt="">
+                        <span>International</span>
+                    </button>
+                </ul>
+                <p style="margin-bottom: 5px;">Liên hệ</p>
+                <ul class="contact">
+                    <a href="">
+                        <li class="contact__item">Tòa soạn</li>
+                    </a>
+                    <a href="">
+                        <li class="contact__item">Quảng cáo</li>
+                    </a>
+                    <a href="">
+                        <li class="contact__item">Hợp tác bản quyền</li>
+                    </a>
+                </ul>
+                <hr style="width: calc(100% -40px); margin-left: 35px;">
+                <p style="padding-top: 10px; margin-bottom: 5px;">Đường dây nóng</p>
+                <ul class="phone__contact">
+                    <li class="phone__contact">
+                        <p>083.888.0123</p>
+                        <span>(Hà Nội)</span>
+                    </li>
+                    <li class="phone__contact">
+                        <p>082.233.3555</p>
+                        <span>(TP. Hồ Chí Minh)</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container py-3">
+            <hr style="height: 1px; width: 100%; border: 1px solid #d3d3d3;">
+                <div class="footer__between col-12">
+                    <ul class="footer__between--left">
+                        <li class="between__left--item">
+                            <p>Báo điện tử</p>
+                        </li>
+                        <li class="between__left--item">
+                            <img src="/img/logo.svg" alt="">
+                        </li>
+                    </ul>
+                    <ul class="footer__between--right">
+                        <li class="footer__between--right">
+                            <p>RSS</p>
+                        </li>
+                        <li class="footer__between--right">
+                            <div class="line" style="margin-top: 20px; height: 50%; width: 1px; border: 1px solid #d3d3d3; background-color:#d3d3d3"></div>
+                        <li class="footer__between--right">
+                            <p>Theo dõi Vnexpress trên</p>
+                        <li class="footer__between--right">
+                            <ul class="between__right--icon">
+                                <a href=""><li class="between__right--icon facebook"><i class="ri-facebook-fill"></i></li></a>
+                                <a href=""><li class="between__right--icon twitter"><i class="ri-twitter-fill"></i></li></a>
+                                <a href=""><li class="between__right--icon youtube"><i class="ri-youtube-fill"></i></li></a>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <hr style="height: 1px; width: 100%; border: 0.5px solid #d3d3d3;">
+        </div>
+        <div class="container">
+            <div class="footer__bottom col-lg-12">
+                <ul class="footer__bottom--item col-lg-4">
+                    <li class="footer__bottom--item">
+                        <p><b>Báo tiếng việt nhiều người xem nhất</b></p>
+                    </li>
+                    <li class="footer__bottom--item">
+                        <span>Thuộc bộ khoa học và công nghệ</span>
+                    </li>
+                    <li class="footer__bottom--item">
+                        <span>Số giấy phép: 548/GP-BTTTT ngày 24/08/2021</span>
+                    </li>
+                </ul>
+                <ul class="footer__bottom--item col-lg-4">
+                    <li class="footer__bottom--item">
+                        <span>Tổng biên tập: Phạm Hiếu</span>
+                    </li>
+                    <li class="footer__bottom--item">
+                        <span>Địa chỉ: Tầng 5, Tòa nhà FPT, 17 phố Duy Tân, Cầu Giấy, Hà Nội</span>
+                    </li>
+                    <li class="footer__bottom--item">
+                        <span>Điện thoại: 024 7300 8899 - máy lẻ 4500</span>
+                    </li>
+                </ul>
+                <ul class="footer__bottom--item col-lg-4" style="margin-left: 20px;">
+                    <li class="footer__bottom--item">
+                        <span><i class="ri-copyright-line"></i>1997-2022. Toàn bộ bản quyền thuộc VnExpress</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </footer>
+        <a class="top-page">
+            <i class="ri-arrow-up-line"></i>
+        </a>
+        <!-- FOOTER -->
+    </div>
+    <div class="overlay d-none">
+        <div class="login d-none">
+            <i class="ri-close-circle-line" onclick="closeFunction()"></i>
+            <ul class="title">
+                <li class="title__item--login"><h5 class="active">Đăng nhập</h5></li>
+                <li class="title__item--account"><h5>Tạo tài khoản</h5></li>
+            </ul>
+            <hr style="height: 1px; width: 100%; background-color: #797979; margin-top: -20px; margin-bottom: 20px; ">
+            <div class="form">
+                <div class="login__form">
+                        <p>Đăng nhập với Email</p>
+                        <form action="">
+                            <input type="text" placeholder="Email" class="email">
+                            <input type="password" placeholder="Mật khẩu" class="password ri-eye-fill">
+                            <input type="submit" value="Đăng nhập">
+                            <p class="password__new">Lấy lại mật khẩu</p class="password__new">
+                        </form>
+                </div>
+                <div class="line" style="height: calc(100% - 100px); width: 0.5px; border: 0.5px solid #d3d3d3; background-color: #d3d3d3;"></div>
+                <div class="login__method">
+                    <p>Đăng nhập với</p>
+                    <ul class="login__method">
+                        <a href="" class="facebook"><li><i class="ri-facebook-fill"></i> <span>Facebook</span></li></a>
+                        <a href="" class="google"><li><img src="/img/google_ico.svg" alt=""> <span>Google</span></li></a>
+                        <a href="" class="youtube"><li><img src="/img/app_ico.svg" alt=""> <span>Apple</span></li></a>
+                    </ul>
+                </div>
+        </div>
+        </div>
+        <div class="createform d-none">
+            <i class="ri-close-circle-line" onclick="closeFunction()"></i>
+            <ul class="title">
+                <li class="title__item--login"><h5>Đăng nhập</h5></li>
+                <li class="title__item--account "><h5 class="active">Tạo tài khoản</h5></li>
+            </ul>
+            <hr style="height: 1px; width: 100%; background-color: #797979; margin-top: -20px; margin-bottom: 20px; ">
+            <div class="form">
+                <div class="login__form">
+                        <pre>Tạo tài khoản VnExpress
+Để sử dụng đầy đủ tính năng đọc báo và tham gia
+cộng đồng hơn 4 triệu thành viên
+                        </pre>
+                        <form action="">
+                            <input type="text" placeholder="Email" class="email">
+                            <input type="password" placeholder="Mật khẩu" class="password ri-eye-fill">
+                            <input type="submit" value="Đăng nhập">
+                            <p class="password__new">Lấy lại mật khẩu</p class="password__new">
+                        </form>
+                </div>
+                <div class="line" style="height: calc(100% - 100px); width: 0.5px; border: 0.5px solid #d3d3d3; background-color: #d3d3d3;"></div>
+                <div class="login__method">
+                    <p>Tạo tài khoản với</p>
+                    <ul class="login__method">
+                        <a href="" class="facebook"><li><i class="ri-facebook-fill"></i> <span>Facebook</span></li></a>
+                        <a href="" class="google"><li><img src="/img/google_ico.svg" alt=""> <span>Google</span></li></a>
+                        <a href="" class="youtube"><li><img src="/img/app_ico.svg" alt=""> <span>Apple</span></li></a>
+                    </ul>
+                </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="/js/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js" integrity="sha512-eP8DK17a+MOcKHXC5Yrqzd8WI5WKh6F1TIk5QZ/8Lbv+8ssblcz7oGC8ZmQ/ZSAPa7ZmsCU4e/hcovqR8jfJqA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+      $('ul.slide__imfomation').slick({
+  slidesToShow: 4,
+  slidesToScroll: 1, 
+  arrows:true,
+  Infinity:true
+});
+
+var filtered = false;
+
+$('.js-filter').on('click', function(){
+  if (filtered === false) {
+    $('.filtering').slick('slickFilter',':even');
+    $(this).text('Unfilter Slides');
+    filtered = true;
+   } else {
+    $('.filtering').slick('slickUnfilter');
+     $(this).text('Filter Slides');
+     filtered = false;
+   }
+});
+  </script>
