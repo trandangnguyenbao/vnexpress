@@ -59,12 +59,81 @@ function closeMenu(){
 }
 
 
-
+var titleLoginActive = document.querySelector("ul.title li.title__item--login h5");
+var titleCreateActive = document.querySelector("ul.title li.title__item--account h5");
 var closeItem = document.getElementsByClassName("ri-close-circle-line");
 var overLay = document.querySelector(".overlay");
+var loginButton = document.querySelector("li.login__button");
+var loginForm = document.querySelector(".login");
+var accountCreate = document.querySelector(".createform");
 
+
+console.log(titleCreateActive)
 function closeFunction() {
   overLay.classList.remove("d-block")
   overLay.classList.add("d-none")
+  loginForm.classList.remove("d-block")
+  loginForm.classList.add("d-none")
+  accountCreate.classList.remove("d-block")
+  accountCreate.classList.add("d-none")
 }
 
+
+function loginFunction() {
+  if(overLay.classList.contains("d-none") && loginForm.classList.contains("d-none")){
+    overLay.classList.remove("d-none")
+    overLay.classList.add("d-block")
+    loginForm.classList.remove("d-none")
+    loginForm.classList.add("d-block")
+    accountCreate.classList.remove("d-block")
+    accountCreate.classList.add("d-none")
+    titleCreateActive.classList.remove("active")
+    titleLoginActive.classList.add("active")
+  }
+  else if (overLay.classList.contains("d-block") && loginForm.classList.contains("d-none") && accountCreate.classList.contains("d-block")){
+    loginForm.classList.remove("d-none")
+    loginForm.classList.add("d-block")
+    accountCreate.classList.remove("d-block")
+    accountCreate.classList.add("d-none")
+    titleCreateActive.classList.remove("active")
+    titleLoginActive.classList.add("active")
+  }
+}
+
+function createForm() {
+  if(overLay.classList.contains("d-block") && loginForm.classList.contains("d-block") && accountCreate.classList.contains("d-none")){
+    loginForm.classList.remove("d-block")
+    loginForm.classList.add("d-none")
+    accountCreate.classList.remove("d-none")
+    accountCreate.classList.add("d-block")
+    titleLoginActive.classList.remove("active")
+    titleCreateActive.classList.add("active")
+  }
+  // else if(overLay.classList.contains("d-block") && loginForm.classList.contains("d-none") && accountCreate.classList.contains("d-block")){
+  //   loginForm.classList.remove("d-none")
+  //   loginForm.classList.add("d-block")
+  //   accountCreate.classList.remove("d-block")
+  //   accountCreate.classList.add("d-none")
+  //   titleCreateActive.classList.remove("active")
+  //   titleLoginActive.classList.add("active")
+  // }
+}
+
+var headerItem = document.querySelector(".header");
+
+if(screen.width > 120){
+  headerItem.classList.remove("container");
+  headerItem.classList.add("container-fluid");
+}
+else{
+  headerItem.classList.remove("container-fluid");
+  headerItem.classList.add("container")
+}
+
+
+var headerChild = document.querySelector(".noichua");
+
+if(screen.width < 989){
+  headerChild.classList.remove("container")
+  headerChild.classList.add("container-fluid")
+}

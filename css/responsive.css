@@ -1,0 +1,88 @@
+
+@media (min-width: 1200px){
+
+}
+
+@media (min-width: 1024px){
+}
+
+@media (min-width: 1128px){
+    li.header__left span, ul.header__left .line{
+        display: none;
+    }
+
+    ul.navbar__item li.navbar__item a.navbar__item{
+        font-size: 15px;
+    }
+    ul.header__left li.menu__item{
+        display: none;
+       }
+}
+
+@media (min-width: 1128px) and (max-width: 1358px){
+    ul.navbar__item li.navbar__item:nth-child(15),ul.navbar__item li.navbar__item:nth-child(14), ul.navbar__item li.navbar__item:nth-child(16){
+        content: "";
+        font-size: 15px;
+        display: none;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1128px){
+    li.header__left span, ul.header__left .line{
+        display: none;
+    }
+    ul.header__left li.menu__item i, ul.header__left li.menu__item i:hover{
+        background-color: #fff;
+        font-size: 20px;
+        color: #797979;
+        padding: 10px;
+        display: block;
+    }
+    .navbar{
+        display: none;
+    }
+    .header{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        border-bottom: 1px solid #e5e5e5;
+        z-index: 10000;
+    }
+
+    header#container{
+        padding-top: 90px;
+    }
+
+    .login{
+        left: 15%;
+        top: 10%;
+    }
+
+    .createform, .login {
+        position: absolute;
+        left: 15%;
+        top: 10%;
+        height: 500px;
+        width: 770px;
+        background-color: #fff;
+        margin: 0 auto;
+    }
+
+}
+
+@media (max-width:991px){
+    .header__right input{
+        display: none;
+    }
+    ul.header__right li.search{
+        display: none;
+    }
+
+    ul.header__right li.header__right .line{
+        display: none;
+    }
+}

@@ -18,7 +18,11 @@
     <div>
         <header>
             <div class="header container">
+                <!-- <img src="/img/Screenshot 2022-09-08 202902.png" alt="" class="slideMiddle"> -->
                 <ul class="header__left">
+                    <li class="navbar__item menu__item" onclick="menuOpen()">
+                        <i class="ri-align-justify"></i>
+                    </li>
                     <li class="header__left">
                         <img src="/img/logo.svg" alt="">
                     </li>
@@ -39,18 +43,18 @@
                     <li class="header__right">
                         <div class="line"></div>
                     </li>
-                    <li class="header__right">
+                    <li class="header__right search">
                         <input type="text" placeholder="Tìm kiếm">
                         <i class="ri-search-line"></i>
                     </li>
-                    <li class="header__right">
+                    <li class="header__right login__button" onclick="loginFunction()">
                         <i class="ri-user-fill"></i>
-                        <a href=""><span onclick="loginFucntion()">Đăng Nhập</span></a>
+                        <span style="cursor: pointer;">Đăng Nhập</span>
                     </li>
                 </ul>
             </div>
             <hr>
-            <div class="navbar container-fluid">
+            <div class="navbar container-fluid ">
                 <ul class="navbar__item">
                     <li class="navbar__item hidden hiddenscroll">
                         <img src="/img/icon.jfif" alt="">
@@ -275,15 +279,15 @@
         </header>
         <header id="menu__all sticky__menu">
             <div class="menu__all container d-none">
-                <div class="menu__item col-lg-12">
+                <div class="menu__item col-lg-12 col-md-12">
                     <h4 class="menu__item--title">Tất cả chuyên mục</h4>
                     <span class="menu__item--title" style="left: 0;">
-                        <i class="ri-close-circle-fill" onclick="closeMenu()"></i>
+                        <i class="ri-close-circle-fill " onclick="closeMenu()"></i>
                     </span>
                 </div>
                 <hr>
                 <div class="row menu__all">
-                    <ul class="menu__all--item col-lg-2"><h6>Thời sự</h6>
+                    <ul class="menu__all--item col-lg-2 col-md-2"><h6>Thời sự</h6>
                         <a href=""><li class="menu__all--item">Chính trị</li></a>
                         <a href=""><li class="menu__all--item">Dân sinh</li></a>
                         <a href=""><li class="menu__all--item">Lao động - việc làm</li></a>
@@ -441,9 +445,9 @@
 
         <!-- CONTAINER -->
         <header id="container" class="">
-            <div class="container">
+            <div class="container noichua">
                 <div class="container__item row p-0">
-                    <div class="container__item col-lg-9 p-0">
+                    <div class="container__item col-lg-9 col-md-12 p-0">
                         <ul class="container__item--child">
                             <li class="container__item--child">
                                 <img src="/img/urn-publicid-ap-org-79e3dafb0d-1286-7456-1657623819.jpg" alt="">
@@ -452,7 +456,7 @@
                                 <div>
                                     <h5 class="container__item--child">Sri Lanka xác nhận Tổng thống đến Maldives</h5>
                                     <p class="container__item--child">Không quân Sri Lanka cho biết Tổng thống Gotabaya Rajapaksa và vợ đã lên phi cơ của lực lượng này sáng nay để đến Maldives.</p>
-                                    <p class="container__item--child">"Theo quy định trong hiến pháp và một đề nghị từ chính phủ, Không quân Sri ...</p>
+                                    <p class="container__item--child ">"Theo quy định trong hiến pháp và một đề nghị từ chính phủ, Không quân Sri ...</p>
                                     <a href="" class="container__item-child">Thế giới</a href="">
                                 </div>    
                             </li>
@@ -486,7 +490,7 @@
                         </ul>
                     </div>
 
-                    <div class="container__item col-lg-3 p-0">
+                    <div class="container__item col-lg-3 col-md-3 p-0">
                         <img src="/img/bat-mi-nhung-bi-quyet-chup-anh-bat-dong-san-dep-b6.png" alt="">
                     </div>
                 </div>
@@ -662,10 +666,10 @@
                         
                         </ul>
                         <ul class="container__left col-12">
-                            <li class="container__left col-lg-8 p-0">
-                                <ul class="container__left--item col-lg-12">
-                                    <a href=""><li class="container__left--item col-lg-6 p-0"><img src="/img/d1.png" alt=""></li></a>
-                                    <a href=""><li class="container__left--item col-lg-11">
+                            <li class="container__left col-lg-8 col-md-8 p-0">
+                                <ul class="container__left--item col-lg-12 col-md-12">
+                                    <a href=""><li class="container__left--item col-lg-6 col-md-6 p-0"><img src="/img/d1.png" alt=""></li></a>
+                                    <a href=""><li class="container__left--item col-lg-11 col-md-11">
                                         <h5>VCCI: Cửa hàng tiện lợi không thể chỉ bán cho khách trong phạm vi 500 m</h5>
                                         <p>VCCI đề nghị Bộ Công Thương bỏ các đề xuất không khả thi, thiếu minh bạch và dễ ... </p>
                                     </li></a>
@@ -678,10 +682,10 @@
                             </li>
                         </ul>
                         <hr>
-                        <ul class="container__footer col-lg-12">
-                            <a href="" class="col-lg-4 p-3"><li class="container__footer">Giá Bitcoin được dự báo về 10.000 USD <i class="  ri-chat-4-fill">  31</i></li></a>
-                            <a href="" class="col-lg-4 p-3"><li class="container__footer">Công ty của Bầu Đức lãi cao nhất 5 năm <i class="  ri-chat-4-fill">  18</i></li></a>
-                            <a href="" class="col-lg-4 p-3"><li class="container__footer">Giá thép giảm lần thứ 8 liên tiếp <i class="  ri-chat-4-fill">  12</i></li></a>
+                        <ul class="container__footer col-lg-12 col-md-12">
+                            <a href="" class="col-lg-4 col-md-4 p-3"><li class="container__footer">Giá Bitcoin được dự báo về 10.000 USD <i class="  ri-chat-4-fill">  31</i></li></a>
+                            <a href="" class="col-lg-4 col-md-4 p-3"><li class="container__footer">Công ty của Bầu Đức lãi cao nhất 5 năm <i class="  ri-chat-4-fill">  18</i></li></a>
+                            <a href="" class="col-lg-4 col-md-4 p-3"><li class="container__footer">Giá thép giảm lần thứ 8 liên tiếp <i class="  ri-chat-4-fill">  12</i></li></a>
                         </ul>
                         <hr>
                         <!-- Title -->
@@ -966,7 +970,7 @@
                         </ul>
                         <hr>
                         <!-- Title -->
-                        <form action="" class="dangky">
+                        <form action="" class="dangky d-none" >
                             <span>Đăng ký nhận điểm thi THPT</span>
                             <input type="email" placeholder="Email">
                             <input type="text" placeholder="Số báo danh">
@@ -1919,16 +1923,16 @@
         <div class="login d-none">
             <i class="ri-close-circle-line" onclick="closeFunction()"></i>
             <ul class="title">
-                <li class="title__item--login"><h5 class="active">Đăng nhập</h5></li>
-                <li class="title__item--account"><h5>Tạo tài khoản</h5></li>
+                <li class="title__item--login" onclick="loginFunction()"><h5>Đăng nhập</h5></li>
+                <li class="title__item--account" onclick="createForm()"><h5>Tạo tài khoản</h5></li>
             </ul>
             <hr style="height: 1px; width: 100%; background-color: #797979; margin-top: -20px; margin-bottom: 20px; ">
             <div class="form">
                 <div class="login__form">
                         <p>Đăng nhập với Email</p>
                         <form action="">
-                            <input type="text" placeholder="Email" class="email">
-                            <input type="password" placeholder="Mật khẩu" class="password ri-eye-fill">
+                            <input type="text" required placeholder="Email" class="email">
+                            <input type="password" required placeholder="Mật khẩu" class="password ri-eye-fill">
                             <input type="submit" value="Đăng nhập">
                             <p class="password__new">Lấy lại mật khẩu</p class="password__new">
                         </form>
@@ -1937,7 +1941,7 @@
                 <div class="login__method">
                     <p>Đăng nhập với</p>
                     <ul class="login__method">
-                        <a href="" class="facebook"><li><i class="ri-facebook-fill"></i> <span>Facebook</span></li></a>
+                        <a href="" class="facebook"><li><i class="ri-facebook-fill" style="color: #3b5999; font-size: 20px;"></i> <span>Facebook</span></li></a>
                         <a href="" class="google"><li><img src="/img/google_ico.svg" alt=""> <span>Google</span></li></a>
                         <a href="" class="youtube"><li><img src="/img/app_ico.svg" alt=""> <span>Apple</span></li></a>
                     </ul>
@@ -1947,8 +1951,8 @@
         <div class="createform d-none">
             <i class="ri-close-circle-line" onclick="closeFunction()"></i>
             <ul class="title">
-                <li class="title__item--login"><h5>Đăng nhập</h5></li>
-                <li class="title__item--account "><h5 class="active">Tạo tài khoản</h5></li>
+                <li class="title__item--login" onclick="loginFunction()"><h5 class="">Đăng nhập</h5></li>
+                <li class="title__item--account" onclick="createForm()"><h5 class="active">Tạo tài khoản</h5></li>
             </ul>
             <hr style="height: 1px; width: 100%; background-color: #797979; margin-top: -20px; margin-bottom: 20px; ">
             <div class="form">
@@ -1958,22 +1962,24 @@
 cộng đồng hơn 4 triệu thành viên
                         </pre>
                         <form action="">
-                            <input type="text" placeholder="Email" class="email">
-                            <input type="password" placeholder="Mật khẩu" class="password ri-eye-fill">
-                            <input type="submit" value="Đăng nhập">
+                            <input type="text" placeholder="Nhập Email" class="email">
+                            <input type="password" placeholder="Tạo mật khẩu" class="password ri-eye-fill">
+                            <input type="submit" value="Tạo tài khoản">
                             <p class="password__new">Lấy lại mật khẩu</p class="password__new">
                         </form>
                 </div>
-                <div class="line" style="height: calc(100% - 100px); width: 0.5px; border: 0.5px solid #d3d3d3; background-color: #d3d3d3;"></div>
+                <div class="line" style="height: calc(70%); width: 0.5px; border: 0.5px solid #d3d3d3; background-color: #d3d3d3;"></div>
                 <div class="login__method">
                     <p>Tạo tài khoản với</p>
                     <ul class="login__method">
-                        <a href="" class="facebook"><li><i class="ri-facebook-fill"></i> <span>Facebook</span></li></a>
+                        <a href="" class="facebook"><li><i class="ri-facebook-fill" style="color: #3b5999; font-size: 20px;"></i> <span>Facebook</span></li></a>
                         <a href="" class="google"><li><img src="/img/google_ico.svg" alt=""> <span>Google</span></li></a>
                         <a href="" class="youtube"><li><img src="/img/app_ico.svg" alt=""> <span>Apple</span></li></a>
                     </ul>
                 </div>
-        </div>
+                <br>
+            </div>
+            <p class="quydinh">Khi bấm tạo tài khoản bạn đã đồng ý với <a href="#">quy định</a> của tòa soạn</p>
     </div>
 </body>
 </html>

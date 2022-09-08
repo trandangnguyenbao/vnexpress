@@ -51,7 +51,6 @@ li.header__left{
 }
 
 li.header__right:not(:last-child, :nth-child(3)){
-   
     border: 1px solid #797979;
     margin-right: 10px;
     border-radius: 4px;
@@ -293,6 +292,7 @@ ul.menu__all--item a.menu__all--item:hover{
 /* CONTAINER */
 
 #container{
+    width: 100%;
  padding: 20px 0;   
 }
 
@@ -1381,8 +1381,11 @@ ul.title a{
     color: #000;
 }
 
-ul.title h5.active{
+ul.title li.title__item--login h5.active, li.title__item--account h5.active{
     color: #9F224E;
+}
+ul.title li.title__item--account{
+    color: #333;
 }
 ul.title li.title__item--account{
     color: #333;
@@ -1514,6 +1517,12 @@ ul.login__method a.youtube li span{
     padding: 0px 70px;
     font-size: 17px;
     font-weight: 500;
+}
+
+.createform p.quydinh{
+    margin-top: -130px;
+    text-align: center;
+    font-size: 13px;
 }
 
 
